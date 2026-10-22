@@ -1,0 +1,7 @@
+[
+  { "id": "landscape", "name": "Landscape", "shows": "The site, which grows to fit the footprint." },
+  { "id": "structure", "name": "Structure", "shows": "The skeleton: a thin frame inside every room, and columns under overhangs." },
+  { "id": "slabs",     "name": "Slabs",     "shows": "The floor slabs." },
+  { "id": "rooms",     "name": "Rooms",     "shows": "The walls. One 3×3×3 block per room; neighbours sometimes merge into a bigger one." },
+  { "id": "windows",   "name": "Windows",   "shows": "The windows." }
+]

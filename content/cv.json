@@ -1,0 +1,25 @@
+{
+  "summary": "Architect and computational designer with 5+ years in AEC, combining BIM and automation work with teaching Revit, Dynamo, Grasshopper and Rhino.Inside to professionals and university students. I understand client workflows, scope technical solutions and train the people who use them.",
+  "experience": [
+    { "role": "Computational Designer / Technical Lead", "org": "DataB GmbH", "dates": "05/2026 – 10/2026", "note": "Automation and AI for manufacturing workflows; client advisory and delivery." },
+    { "role": "Computational Designer / Project Manager", "org": "Modelical", "dates": "02/2023 – 08/2025", "note": "BIM and parametrisation projects, including stadium infrastructure and fabrication modelling." },
+    { "role": "Architect", "org": "MRA, Manuel Ruisánchez Arquitectos", "dates": "10/2021 – 02/2023", "note": "Basic and executive projects, tenders." },
+    { "role": "Architect", "org": "Sagrada Família Basilica", "dates": "01/2019 – 07/2020", "note": "Heritage construction site, Rhino and Grasshopper." },
+    { "role": "Architect", "org": "DFT Arquitectes", "dates": "07/2018 – 01/2019", "note": "" },
+    { "role": "Competition collaborator", "org": "Gina Barcelona Architects", "dates": "06/2018 – 07/2018", "note": "Neubrandenburg Intergenerational Center, 1st prize." }
+  ],
+  "teaching": [
+    { "role": "Instructor", "org": "Zigurat Institute of Technology", "dates": "10/2025 – present", "note": "Grasshopper, Dynamo, Revit, Rhino.Inside, Python." },
+    { "role": "Seminar teacher", "org": "ETSAB, UPC", "dates": "10/2025 – 06/2026", "note": "Architectural Representation IV." },
+    { "role": "Seminar teacher", "org": "MPDA, ETSAV, UPC", "dates": "10/2024 – present", "note": "Building Information: Interoperability." },
+    { "role": "Teaching assistant", "org": "MaCAD, IAAC", "dates": "01/2024 – present", "note": "Integrative Modelling Seminar." }
+  ],
+  "education": [
+    { "role": "MaCAD, Advanced Computation and Design", "org": "IAAC", "dates": "2025–2026", "note": "Awarded with honours." },
+    { "role": "Master's in Architecture", "org": "ETSAM, UPM", "dates": "2020–2021", "note": "" },
+    { "role": "Bachelor's in Architecture", "org": "ETSAB, UPC", "dates": "2014–2020", "note": "" }
+  ],
+  "software": ["Rhino", "Grasshopper", "Revit + Rhino.Inside", "AutoCAD", "Navisworks", "ACC / Forma", "Python", "Vue.js", "Vite", "Git", "Postman"],
+  "languages": ["Spanish and Catalan (native)", "English (C2)", "German (C2)", "French (B2)", "Korean (B2)", "Mandarin (A2)"],
+  "certifications": ["Autodesk Forma, Autodesk Learning Center (2026)", "Postman API Beginner and Auth (2026)", "DataCamp Intermediate Python (2026)", "IBM Python 101 for Data Science (2025)"]
+}

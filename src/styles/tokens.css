@@ -1,0 +1,43 @@
+/* Same tokens as the Figma file "Portfolio colours", adapted for screen. */
+:root {
+  --paper: #ffffff;
+  --ink: #000000;
+  --signal: #d7141a;      /* the only accent: selection, the red line */
+  --stone: #8e8e8e;       /* secondary text */
+  --grid: #e4e4e4;        /* dot grid, rules */
+  --glass: #bcc6c8;       /* water and glass in the voxel models */
+  --cloud: #f3f3f3;
+  --rain: #8e8e8e;
+
+  --font-pixel: 'Pixelify Sans', ui-monospace, monospace;
+  --font-text: 'Inter', system-ui, sans-serif;
+
+  /* Everything snaps to an 8px grid. */
+  --u: 8px;
+  --gutter: 16px;
+  --bar-h: 64px;          /* the header bar: name and Work, CV, Contact */
+  --max-text: 64ch;
+
+  /* Type scale (perfect fourth, rounded to the grid) */
+  --t-small: 14px;
+  --t-body: 17px;
+  --t-lead: 24px;
+  --t-h2: 32px;
+  --t-h1: 56px;
+}
+
+@media (min-width: 900px) {
+  :root { --gutter: 40px; --t-h1: 72px; }
+}
+
+/* Dark mode: set on <html data-theme="dark">, from the system setting or the header toggle. */
+:root[data-theme="dark"] {
+  --paper: #000000;
+  --ink: #ffffff;
+  --signal: #f0262d;
+  --stone: #9a9a9a;
+  --grid: #262626;
+  --cloud: #262626;
+  --rain: #6f8188;
+  color-scheme: dark;
+}
