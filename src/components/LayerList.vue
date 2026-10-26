@@ -6,9 +6,9 @@ const emit = defineEmits(['choose'])
 
 <template>
   <nav class="layers" aria-label="Layers of the cluster, one project each">
-    <p class="caption">Layers, top to bottom</p>
+    <p class="caption">Layers</p>
     <ol>
-      <li v-for="layer in p.stackTopDown" :key="layer.id">
+      <li v-for="layer in p.layers" :key="layer.id">
         <button
           type="button"
           :class="{ on: p.selected === layer.id, hot: p.hovered === layer.id }"
@@ -21,7 +21,9 @@ const emit = defineEmits(['choose'])
         >
           <span class="swatch" aria-hidden="true" />
           <span class="layer">{{ layer.name }}</span>
-          <span class="project">{{ p.projectFor(layer.id)?.title }}</span>
+          <span class="project">
+            <template v-for="(line, i) in p.layerSubtitles(layer.id)" :key="line"><br v-if="i" />{{ line }}</template>
+          </span>
         </button>
       </li>
     </ol>

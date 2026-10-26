@@ -3,7 +3,7 @@
   --paper: #ffffff;
   --ink: #000000;
   --signal: #d7141a;      /* the only accent: selection, the red line */
-  --stone: #8e8e8e;       /* secondary text */
+  --stone: #6b6b6b;       /* secondary text: 5.3:1 on white */
   --grid: #e4e4e4;        /* dot grid, rules */
   --glass: #bcc6c8;       /* water and glass in the voxel models */
   --cloud: #f3f3f3;
@@ -35,7 +35,7 @@
   --paper: #000000;
   --ink: #ffffff;
   --signal: #f0262d;
-  --stone: #9a9a9a;
+  --stone: #c4c4c4;       /* 12:1 on black */
   --grid: #262626;
   --cloud: #262626;
   --rain: #6f8188;

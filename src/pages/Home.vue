@@ -7,6 +7,7 @@ import PixelIcon from '../components/PixelIcon.vue'
 import Compass from '../components/Compass.vue'
 import WeatherSky from '../components/WeatherSky.vue'
 import { Aggregator } from '../three/aggregate.js'
+import { LAYERS } from '../three/VoxelStage.js'
 import { getWeather, KINDS } from '../weather.js'
 import { useTheme } from '../stores/theme.js'
 
@@ -39,7 +40,8 @@ const tagRef = (id) => (el) => { if (el) tagEls[id] = el; else delete tagEls[id]
 const tagPos = computed(() => {
   const out = {}, placed = []
   const gap = 8, pad = 6
-  p.layers.forEach((layer, i) => {
+  // in the model's order, bottom part first: the bottom tag goes underneath
+  LAYERS.map((id) => p.layers.find((l) => l.id === id)).filter(Boolean).forEach((layer, i) => {
     const a = frame.value.anchors[layer.id]
     if (!a) return
     const el = tagEls[layer.id]
@@ -71,7 +73,7 @@ const safe = computed(() => wide.value
 
 // Scrolling through the first section takes the cluster apart.
 const explode = computed(() => Math.min(1, progress.value / 0.8))
-const card = computed(() => p.selected && p.projectFor(p.selected))
+const card = computed(() => (p.selected ? p.layerItems(p.selected) : []))
 
 // The cluster: a new seed on every visit, or ?seed=12345 to get one back.
 const seed = ref(0)
@@ -256,20 +258,24 @@ onBeforeUnmount(() => {
               @click="choose(layer.id)"
             >
               <span class="tag-layer"><span class="swatch" aria-hidden="true" />{{ layer.name }}</span>
-              <span v-if="p.hovered === layer.id || p.selected === layer.id" class="tag-project">{{ p.projectFor(layer.id)?.title }}</span>
+              <template v-if="p.hovered === layer.id || p.selected === layer.id">
+                <span v-for="line in p.layerSubtitles(layer.id)" :key="line" class="tag-project">{{ line }}</span>
+              </template>
             </button>
           </template>
         </div>
 
-        <aside v-if="card" class="card" aria-live="polite">
+        <aside v-if="card.length" class="card" aria-live="polite">
           <button class="close pixel-button" type="button" aria-label="Close" @click="p.selected = null">
             <PixelIcon name="close" />
           </button>
-          <p class="card-layer">{{ p.layerName(p.selected) }}</p>
-          <p class="card-shows">{{ p.layerShows(p.selected) }}</p>
-          <h2>{{ card.title }}</h2>
-          <p class="card-line">{{ card.oneLiner }}</p>
-          <RouterLink class="pixel-button open" :to="`/work/${card.slug}`">Open project</RouterLink>
+          <h2 class="card-layer">{{ p.layerName(p.selected) }}</h2>
+          <div v-for="item in card" :key="item.key" class="card-project" :class="{ compact: !item.slug }">
+            <h3>{{ item.title }}</h3>
+            <p v-if="!item.slug" class="card-line">{{ item.line }}</p>
+            <RouterLink v-if="item.slug" class="pixel-button open" :to="`/work/${item.slug}`">Open project</RouterLink>
+          </div>
+          <RouterLink v-if="p.isCvLayer(p.selected)" class="pixel-button open card-cv" to="/cv">Read the CV</RouterLink>
         </aside>
 
         <div class="controls" :class="fadeIn(2)" :style="order(2)">
@@ -350,7 +356,7 @@ h1 { font-size: clamp(32px, 4.4vw, 56px); }
 .tag .swatch { width: 10px; height: 10px; border: 2px solid var(--ink); }
 .tag.on .tag-layer, .tag:hover .tag-layer, .tag.hot .tag-layer { color: var(--signal); }
 .tag.on .swatch { background: var(--signal); border-color: var(--signal); }
-.tag-project { font-size: 12px; color: var(--stone); padding-left: 18px; }
+.tag-project { font-size: 13px; color: var(--stone); padding-left: 18px; }
 .list { position: absolute; right: var(--gutter); top: 50%; transform: translateY(-50%); }
 
 .card {
@@ -358,10 +364,13 @@ h1 { font-size: clamp(32px, 4.4vw, 56px); }
   width: 360px; padding: 20px 20px 24px; background: var(--paper);
   border: 2px solid var(--ink); box-shadow: 6px 6px 0 var(--signal);
 }
-.card-layer { font-family: var(--font-pixel); font-size: 16px; color: var(--signal); }
-.card-shows { font-size: var(--t-small); color: var(--stone); margin: 2px 40px 12px 0; }
-.card h2 { font-size: 28px; margin-top: 4px; }
-.card-line { margin: 12px 0 20px; }
+.card-layer { font-size: 28px; color: var(--signal); margin-right: 40px; }
+.card-project { border-top: 2px solid var(--ink); padding-top: 12px; margin-top: 16px; display: grid; gap: 10px; justify-items: start; }
+.card h3 { font-family: var(--font-pixel); font-weight: 600; font-size: 21px; line-height: 1.1; }
+.card-line { margin: 8px 0 14px; }
+.card-project.compact { padding-top: 8px; margin-top: 10px; gap: 2px; }
+.card-project.compact .card-line { margin: 0 0 4px; font-size: var(--t-small); color: var(--stone); }
+.card-cv { margin-top: 16px; }
 .open { text-decoration: none; }
 .close { position: absolute; top: 12px; right: 12px; min-width: 32px; height: 32px; padding: 0; box-shadow: 2px 2px 0 var(--ink); }
 

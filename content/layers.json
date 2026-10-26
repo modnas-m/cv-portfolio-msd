@@ -1,7 +1,29 @@
 [
-  { "id": "landscape", "name": "Landscape", "shows": "The site, which grows to fit the footprint." },
-  { "id": "structure", "name": "Structure", "shows": "The skeleton: a thin frame inside every room, and columns under overhangs." },
-  { "id": "slabs",     "name": "Slabs",     "shows": "The floor slabs." },
-  { "id": "rooms",     "name": "Rooms",     "shows": "The walls. One 3×3×3 block per room; neighbours sometimes merge into a bigger one." },
-  { "id": "windows",   "name": "Windows",   "shows": "The windows." }
+  {
+    "id": "windows",
+    "name": "Automation & API",
+    "shows": "In the model: the windows, a way into the data."
+  },
+  {
+    "id": "structure",
+    "name": "Computational Design",
+    "shows": "In the model: the skeleton, a thin frame in every room and columns under overhangs."
+  },
+  {
+    "id": "slabs",
+    "name": "BIM Management",
+    "shows": "In the model: the floor slabs, the levels everything is coordinated on."
+  },
+  {
+    "id": "rooms",
+    "name": "Web Apps & AI",
+    "shows": "In the model: the rooms. Fitting, since Sensi is about how rooms feel."
+  },
+  {
+    "id": "landscape",
+    "name": "Teaching",
+    "shows": "In the model: the ground everything else grows from.",
+    "cv": "teaching",
+    "summary": "Zigurat, UPC, IAAC"
+  }
 ]

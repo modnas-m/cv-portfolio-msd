@@ -7,9 +7,11 @@ import NotFound from './NotFound.vue'
 const route = useRoute()
 const p = usePortfolio()
 const project = computed(() => p.projectBySlug(route.params.slug))
-const index = computed(() => p.layers.findIndex((l) => l.id === project.value?.layer))
-const below = computed(() => index.value > 0 ? p.layers[index.value - 1] : null)
-const above = computed(() => index.value < p.layers.length - 1 ? p.layers[index.value + 1] : null)
+// previous and next follow the cluster, bottom layer first
+const seq = computed(() => p.projectSequence)
+const index = computed(() => seq.value.findIndex((x) => x.slug === project.value?.slug))
+const prev = computed(() => (index.value > 0 ? seq.value[index.value - 1] : null))
+const next = computed(() => (index.value < seq.value.length - 1 ? seq.value[index.value + 1] : null))
 const pending = (text) => text?.startsWith('[')
 // image paths in projects.json start at public/; prefix the site's base path
 const asset = (src) => (src.startsWith('/') ? import.meta.env.BASE_URL + src.slice(1) : src)
@@ -18,7 +20,7 @@ const asset = (src) => (src.startsWith('/') ? import.meta.env.BASE_URL + src.sli
 <template>
   <NotFound v-if="!project" />
   <main v-else class="page project">
-    <p class="layer"><span class="swatch" aria-hidden="true" />{{ p.layerName(project.layer) }} layer</p>
+    <p class="layer"><span class="swatch" aria-hidden="true" />{{ p.layerName(project.layer) }}</p>
     <h1>{{ project.title }}</h1>
     <p class="lead">{{ project.oneLiner }}</p>
 
@@ -46,14 +48,14 @@ const asset = (src) => (src.startsWith('/') ? import.meta.env.BASE_URL + src.sli
       </template>
     </div>
 
-    <nav class="stack" aria-label="Other layers">
-      <RouterLink v-if="above" :to="`/work/${p.projectFor(above.id).slug}`" class="up">
-        <span class="dir">Layer above</span>
-        <span class="to">{{ above.name }}: {{ p.projectFor(above.id).title }}</span>
+    <nav class="stack" aria-label="Other projects">
+      <RouterLink v-if="next" :to="`/work/${next.slug}`">
+        <span class="dir">Next project</span>
+        <span class="to">{{ p.layerName(next.layer) }}: {{ next.title }}</span>
       </RouterLink>
-      <RouterLink v-if="below" :to="`/work/${p.projectFor(below.id).slug}`" class="down">
-        <span class="dir">Layer below</span>
-        <span class="to">{{ below.name }}: {{ p.projectFor(below.id).title }}</span>
+      <RouterLink v-if="prev" :to="`/work/${prev.slug}`">
+        <span class="dir">Previous project</span>
+        <span class="to">{{ p.layerName(prev.layer) }}: {{ prev.title }}</span>
       </RouterLink>
       <RouterLink to="/" class="back"><span class="dir">Back to the cluster</span></RouterLink>
     </nav>
