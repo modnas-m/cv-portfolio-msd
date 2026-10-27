@@ -2,7 +2,7 @@
   {
     "slug": "island-topography",
     "layer": "slabs",
-    "title": "Island topography + urbanism",
+    "title": "Revit native earthworks and urbanism",
     "kind": "Professional, Modelical",
     "years": "2023–2025",
     "oneLiner": "An island's terrain, roads and drainage, rebuilt as native Revit elements.",
@@ -108,7 +108,7 @@
     "problem": "Floor plans get checked for structure, cost and energy, but not for how each room will feel to the person living in it.",
     "approach": "It learns a user's sensory profile, scores every room with fixed rules, and lets them edit the plan in plain language. The LLM routes and explains; it never sets the score.",
     "result": "Trade-offs like 'bigger window, more noise, colder room' become visible across a whole plan, re-scored live on every edit.",
-    "coordination": "Led by Emilie El Chidiac. I built the back end and front end and refined the LLM layer.",
+    "coordination": "Led by Emilie El Chidiac. I helped on the initial ideation, supported the back end and front end and refined the LLM layer.",
     "tools": [
       "Python",
       "LLM agents",

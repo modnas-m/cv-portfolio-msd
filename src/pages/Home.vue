@@ -232,11 +232,10 @@ onBeforeUnmount(() => {
           @ready="grow"
         />
 
-        <div class="intro" :class="[{ away: card }, fadeIn(0)]" :style="order(0)" :aria-hidden="!!card">
+        <div class="intro" :class="[{ away: card.length }, fadeIn(0)]" :style="order(0)" :aria-hidden="card.length > 0">
           <h1>{{ p.site.tagline }}</h1>
           <p v-if="p.site.subtitle" class="subtitle">{{ p.site.subtitle }}</p>
-          <p class="role">{{ p.site.role }} in Barcelona. Every layer of this cluster is something I worked on.</p>
-          <p class="hint" :class="{ gone: explode > 0.08 }">Scroll to take it apart.</p>
+          <p class="role">{{ p.site.role }} in Barcelona.</p>
         </div>
 
         <LayerList class="list" :class="[fadeIn(1), { asleep: listFade < 0.3 }]" :style="[order(1), { opacity: listFade }]"
@@ -323,7 +322,8 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .stage { height: 280vh; position: relative; }
-.pending { opacity: 0; pointer-events: none; }
+/* !important: the list also carries an inline scroll-fade opacity, which must not show it early */
+.pending { opacity: 0 !important; pointer-events: none; }
 .reveal { animation: fade-in .5s ease-out backwards; animation-delay: calc(var(--i) * 120ms); }
 @keyframes fade-in { from { opacity: 0; transform: translateY(4px); } }
 .sticky { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; }
@@ -336,8 +336,6 @@ h1 { font-size: clamp(32px, 4.4vw, 56px); }
 .subtitle { font-family: var(--font-pixel); font-size: clamp(20px, 2vw, 28px); line-height: 1.15; margin-top: 10px; white-space: nowrap; }
 .intro h1, .subtitle { text-wrap: balance; }
 .role { margin-top: 16px; max-width: 34ch; background: var(--paper); }
-.hint { margin-top: 24px; font-family: var(--font-pixel); font-size: 18px; color: var(--signal); transition: opacity .4s; }
-.hint.gone { opacity: 0; }
 
 .asleep { pointer-events: none !important; }
 .asleep :deep(*) { pointer-events: none !important; }
@@ -417,7 +415,6 @@ h1 { font-size: clamp(32px, 4.4vw, 56px); }
   h1 { font-size: 30px; }
   .subtitle { font-size: 19px; margin-top: 4px; white-space: normal; }
   .role { font-size: 15px; margin-top: 10px; }
-  .hint { margin-top: 12px; font-size: 16px; }
   .list { top: auto; bottom: 84px; left: var(--gutter); right: var(--gutter); transform: none; }
   .card { left: var(--gutter); right: var(--gutter); top: 72px; width: auto; }
   .controls { bottom: 16px; align-items: center; }

@@ -40,7 +40,7 @@ h1 { font-size: var(--t-h1); }
 h2 { font-size: 24px; padding-bottom: 8px; border-bottom: 2px solid var(--ink); }
 ol { list-style: none; margin: 0; padding: 0; }
 ol li { display: grid; grid-template-columns: 180px 1fr; column-gap: 24px; padding: 14px 0; border-bottom: 1px solid var(--grid); }
-.dates { font-family: var(--font-pixel); color: var(--stone); grid-row: span 2; }
+.dates { font-variant-numeric: tabular-nums; color: var(--stone); grid-row: span 2; }
 strong { font-weight: 500; }
 .note { color: var(--stone); font-size: var(--t-small); grid-column: 2; }
 .lists { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
