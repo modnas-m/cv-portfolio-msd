@@ -323,7 +323,8 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .stage { height: 280vh; position: relative; }
-.pending { opacity: 0; pointer-events: none; }
+/* !important: the list also carries an inline scroll-fade opacity, which must not show it early */
+.pending { opacity: 0 !important; pointer-events: none; }
 .reveal { animation: fade-in .5s ease-out backwards; animation-delay: calc(var(--i) * 120ms); }
 @keyframes fade-in { from { opacity: 0; transform: translateY(4px); } }
 .sticky { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; }
