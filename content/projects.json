@@ -16,7 +16,38 @@
       "Rhino.Inside Revit",
       "Grasshopper"
     ],
-    "note": "Details under NDA."
+    "note": "Details under NDA.",
+    "hero": {
+      "src": "island-topography/stages.webp",
+      "alt": "The same part of the island three times: Rhino BREP surfaces, native Revit topography, native Revit floors",
+      "caption": "Rhino BREP surfaces, then native Revit topography, then native Revit floors.",
+      "size": "wide"
+    },
+    "sections": [
+      {
+        "heading": "One terrain to build on",
+        "text": "The topography of the whole island was built at the start of the project, combining Civil 3D and Rhino. Working alongside the urban planners and architects, every design decision after that (roads, paving, urban furniture, energy systems) was placed on top of it.",
+        "figures": [
+          {
+            "src": "island-topography/terrain.webp",
+            "alt": "Exploded axonometric of the island terrain in layers, with a colour map of the earthworks volume",
+            "caption": "The terrain in layers, with the total earthworks volume calculated in Grasshopper.",
+            "size": "tall"
+          }
+        ]
+      },
+      {
+        "heading": "From mesh to native Revit",
+        "text": "A base mesh became editable Rhino surfaces, then native Revit elements: topography, floors adapted to the terrain, and linear elements like drainage and railings. Each step was a Grasshopper script through Rhino.Inside, so changes could be pushed through again.",
+        "figures": [
+          {
+            "src": "island-topography/workflow.webp",
+            "alt": "Diagram: base topography mesh, Civil 3D and Rhino, editable Rhino BREP topography, then native Revit topography, floors and linear elements",
+            "size": "tall"
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "stadium-facade",
@@ -34,7 +65,38 @@
       "Rhino.Inside Revit",
       "Grasshopper"
     ],
-    "note": "Details under NDA."
+    "note": "Details under NDA.",
+    "hero": {
+      "src": "stadium-facade/substructure.webp",
+      "alt": "Exploded axonometric of the façade substructure layers, next to one fabrication-ready substructure piece with its connection details",
+      "caption": "From the simplified façade substructure to a fabrication-ready piece.",
+      "size": "wide"
+    },
+    "sections": [
+      {
+        "heading": "One model, two jobs",
+        "text": "It started as advisory on a precise Revit model of the façade structure, and grew into two tasks: a full BIM model for clash detection, within the system and against other disciplines like the main stadium structure, and fabrication models that read their data from that base model.",
+        "figures": [
+          {
+            "src": "stadium-facade/workflow.webp",
+            "alt": "Workflow from the base stadium grids through Rhino.Inside Revit to substructure placement, clash detection and automatic fabrication export",
+            "size": "wide"
+          }
+        ]
+      },
+      {
+        "heading": "Automated end to end",
+        "text": "Every step ran through Rhino.Inside Revit and Grasshopper, from the stadium grids to the eaves and the substructure. When fabrication issues came up, the Revit model changed and the export scripts rebuilt the STP files, so every fabrication file stayed fed by the one model.",
+        "figures": [
+          {
+            "src": "stadium-facade/script.webp",
+            "alt": "Overview of the Grasshopper definition, grouped into geometry creation for standard and exceptional cases",
+            "caption": "Part of the Grasshopper definition.",
+            "size": "wide"
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "sensi",
