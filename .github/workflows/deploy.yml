@@ -24,9 +24,13 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      # With a custom domain (repo variable CUSTOM_DOMAIN, e.g. mariasanchez.com)
+      # the site lives at the domain's root; otherwise at /<repo name>/ on github.io.
       - run: npm run build
         env:
-          BASE_PATH: /${{ github.event.repository.name }}/
+          BASE_PATH: ${{ vars.CUSTOM_DOMAIN && '/' || format('/{0}/', github.event.repository.name) }}
+      - if: ${{ vars.CUSTOM_DOMAIN }}
+        run: echo "${{ vars.CUSTOM_DOMAIN }}" > dist/CNAME
       # GitHub Pages has no SPA routing: serve the app for unknown paths too
       - run: cp dist/index.html dist/404.html
       - uses: actions/upload-pages-artifact@v3
