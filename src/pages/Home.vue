@@ -232,7 +232,7 @@ onBeforeUnmount(() => {
           @ready="grow"
         />
 
-        <div class="intro" :class="[{ away: card }, fadeIn(0)]" :style="order(0)" :aria-hidden="!!card">
+        <div class="intro" :class="[{ away: card.length }, fadeIn(0)]" :style="order(0)" :aria-hidden="card.length > 0">
           <h1>{{ p.site.tagline }}</h1>
           <p v-if="p.site.subtitle" class="subtitle">{{ p.site.subtitle }}</p>
           <p class="role">{{ p.site.role }} in Barcelona. Every layer of this cluster is something I worked on.</p>
