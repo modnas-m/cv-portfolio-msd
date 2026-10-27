@@ -175,9 +175,9 @@
     ]
   },
   {
-    "slug": "hyperbuilding-forma",
+    "slug": "model-data",
     "layer": "windows",
-    "title": "Hyperbuilding + Forma",
+    "title": "Model data, made visible",
     "kind": "MaCAD, IAAC, extended with my own APS work",
     "years": "2026",
     "oneLiner": "Performance data placed inside the model as geometry, then checked automatically in the cloud.",
@@ -189,12 +189,14 @@
       "Rhino.Inside Revit",
       "Grasshopper",
       "Speckle",
-      "Autodesk Platform Services"
+      "Autodesk Platform Services",
+      "Python",
+      "Vue"
     ],
     "link": "https://blog.iaac.net/turning-data-into-geometry-rhino-inside-revit-workflows-for-modelling-documenting/",
     "team": "Lakzhmy Mari Zaro, Emilie El Chidiac and me, as the studio's data team.",
     "hero": {
-      "src": "hyperbuilding-forma/kpi-towers.webp",
+      "src": "model-data/kpi-towers.webp",
       "alt": "Three tower models coloured by thermal, acoustic and air-quality KPIs",
       "caption": "Three KPIs, read as geometry in the model.",
       "size": "wide"
@@ -205,7 +207,7 @@
         "text": "Hyperbuilding 01 was one of three linked megastructures for Santiago de Chile, designed to filter air and water. Other teams worked on structure, façade and program. We were the coordination layer: naming conventions, information structure, the timing of decisions, and turning design into usable data.",
         "figures": [
           {
-            "src": "hyperbuilding-forma/data-team.webp",
+            "src": "model-data/data-team.webp",
             "alt": "The data team’s four roles and their outputs, from weekly timeline to internal updates",
             "size": "wide"
           }
@@ -216,7 +218,7 @@
         "text": "A web app that pulls the project's information into one place: a KPI dashboard, a status diagram, a health check, and a timeline of each team's milestones.",
         "figures": [
           {
-            "src": "hyperbuilding-forma/control-room.webp",
+            "src": "model-data/control-room.webp",
             "alt": "Control room web app: KPI dashboard, status diagram, health check and timeline",
             "size": "wide"
           }
@@ -227,19 +229,19 @@
         "text": "If the data team doesn't draw geometry, how does its work show up in the model? Three parametric Revit families turn KPIs into elements: a thermal panel, a noise orbit and a pollutant sphere.",
         "figures": [
           {
-            "src": "hyperbuilding-forma/family-thermal.webp",
+            "src": "model-data/family-thermal.webp",
             "alt": "Family A, Thermal Panel, with its shading and radiation parameters",
             "caption": "Thermal panel",
             "size": "third"
           },
           {
-            "src": "hyperbuilding-forma/family-noise.webp",
+            "src": "model-data/family-noise.webp",
             "alt": "Family B, Noise Orbit, with its machinery and exterior noise parameters",
             "caption": "Noise orbit",
             "size": "third"
           },
           {
-            "src": "hyperbuilding-forma/family-air.webp",
+            "src": "model-data/family-air.webp",
             "alt": "Family C, Pollutant Sphere, with its pollution and clean air parameters",
             "caption": "Pollutant sphere",
             "size": "third"
@@ -251,7 +253,7 @@
         "text": "Grasshopper reads positions from the shared Speckle model. Rhino.Inside Revit sets the levels, places the families and fills their shared parameters. Views, sheets and filters with gradient overrides follow, ready for RVT, IFC or PDF.",
         "figures": [
           {
-            "src": "hyperbuilding-forma/workflow.webp",
+            "src": "model-data/workflow.webp",
             "alt": "Workflow diagram from base information through three Revit model versions to RVT, IFC and PDF",
             "size": "wide"
           }
@@ -262,19 +264,19 @@
         "text": "Each KPI is readable in the model itself: boxes coloured by thermal compliance, noise orbits on every level, and pollutant spheres where purification demand is highest.",
         "figures": [
           {
-            "src": "hyperbuilding-forma/result-thermal.webp",
+            "src": "model-data/result-thermal.webp",
             "alt": "Tower coloured by thermal comfort compliance, with radiation and shading details",
             "caption": "Thermal comfort compliance.",
             "size": "wide"
           },
           {
-            "src": "hyperbuilding-forma/result-noise.webp",
+            "src": "model-data/result-noise.webp",
             "alt": "Noise orbits stacked per level, with internal and external noise values",
             "caption": "Acoustic comfort.",
             "size": "half"
           },
           {
-            "src": "hyperbuilding-forma/result-air.webp",
+            "src": "model-data/result-air.webp",
             "alt": "Pollutant spheres along the cores, with the purification table",
             "caption": "Air purification.",
             "size": "half"
@@ -282,9 +284,46 @@
         ]
       },
       {
-        "heading": "Extended with Forma",
-        "text": "After the studio, I took the naming and parameter standard further on my own, using Autodesk Platform Services to check it automatically on the AEC Data Model.",
-        "figures": []
+        "heading": "A dashboard on the AEC Data Model",
+        "text": "After the studio, I took the naming and parameter standard further on my own: a dashboard with a Python back end and a Vue front end, built on Autodesk Platform Services. It reads the Revit model in the cloud and shows, version by version, how much of each KPI family meets the standard.",
+        "figures": [
+          {
+            "src": "model-data/dashboard-overview.webp",
+            "dark": "model-data/dashboard-overview-dark.webp",
+            "alt": "Model Data Quality dashboard: one card per KPI family with its compliance percentage, and a chart of compliance per version",
+            "caption": "Overview: each KPI family and how it evolved across eight versions.",
+            "size": "wide"
+          }
+        ]
+      },
+      {
+        "heading": "How it checks",
+        "text": "You sign in with your Autodesk account and pick the model. The app asks the AEC Data Model API for each family's elements, only the KPI parameters, for any version. Every value is checked against a rules file (format, allowed list, range, unique) and ends up OK, breaking the standard, or missing.",
+        "figures": [
+          {
+            "src": "model-data/dashboard-how-it-works.webp",
+            "alt": "Flow diagram: Autodesk sign-in, AEC Data Model API, then per element: has a value, follows the rules, ending in OK, breaks standard or missing",
+            "size": "tall"
+          }
+        ]
+      },
+      {
+        "heading": "What to fix",
+        "text": "The evolution shows when each parameter reached the standard. For anything still failing, the dashboard lists the Revit element IDs and the problem, so whoever owns the model can find and fix them directly.",
+        "figures": [
+          {
+            "src": "model-data/dashboard-evolution.webp",
+            "alt": "Chart of the share of elements meeting the standard per parameter across versions v1 to v8",
+            "caption": "Per parameter, per version.",
+            "size": "wide"
+          },
+          {
+            "src": "model-data/dashboard-to-fix.webp",
+            "alt": "Table of KPI_NoiseOrbit elements to fix, with Revit element IDs, values and problems",
+            "caption": "Elements to fix, by Revit ID.",
+            "size": "wide"
+          }
+        ]
       }
     ]
   },

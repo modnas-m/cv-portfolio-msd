@@ -6,7 +6,7 @@ Every visit grows a new cluster from a random seed, anywhere from 5 to 30 room b
 
 | Layer (as listed) | Part of the model | Holds |
 | --- | --- | --- |
-| Automation & API | the windows | Hyperbuilding + Forma, Computational bucketing (Speckle Automate) |
+| Automation & API | the windows | Model data, made visible (Hyperbuilding + APS dashboard), Computational bucketing (Speckle Automate) |
 | Computational Design | the skeleton: a thin frame in every room, columns under overhangs | Stadium façade: BIM to fabrication |
 | BIM Management | the floor slabs | Island topography + urbanism |
 | Web Apps & AI | the rooms' walls | Sensi |

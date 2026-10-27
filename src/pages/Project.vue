@@ -90,6 +90,7 @@ dd.pending { color: var(--stone); }
 .figures .wide { grid-column: span 6; }
 .figures .half { grid-column: span 3; }
 .figures .third { grid-column: span 2; }
+.figures .tall { grid-column: 2 / span 4; }
 .slot {
   aspect-ratio: 4 / 3; display: grid; place-items: center;
   font-family: var(--font-pixel); color: var(--stone);
@@ -109,6 +110,6 @@ dd.pending { color: var(--stone); }
   .images { grid-template-columns: 1fr; }
   .slot.wide { grid-column: auto; }
   .chapter { margin-top: 56px; }
-  .figures .half, .figures .third { grid-column: span 6; }
+  .figures .half, .figures .third, .figures .tall { grid-column: span 6; }
 }
 </style>
