@@ -265,9 +265,30 @@ export class VoxelStage {
     this.onHover(null)
     this.canvas.style.cursor = ''
   }
-  _onClick = () => {
+  // Pick where the click or tap actually happened: on touch screens the pointer
+  // "leaves" before the click fires, and there is no hover beforehand.
+  _onClick = (e) => {
     if (this._dragEnded) { this._dragEnded = false; return }
-    if (this._pick) this.onSelect(this._pick)
+    const id = this._pickAt(e.clientX, e.clientY, e.pointerType === 'touch' ? 22 : 8)
+    if (id) this.onSelect(id)
+  }
+
+  // the layer under a screen point; thin parts are hard to hit, so if the exact
+  // point misses, try rings around it and take the nearest hit
+  _pickAt(x, y, reach) {
+    const r = this.canvas.getBoundingClientRect()
+    const at = (px, py) => {
+      this._pointer.set(((px - r.left) / r.width) * 2 - 1, -((py - r.top) / r.height) * 2 + 1)
+      return this._pickLayer()
+    }
+    let id = at(x, y)
+    for (let ring = reach / 2; !id && ring <= reach; ring += reach / 2) {
+      for (let k = 0; k < 8 && !id; k++) {
+        const a = (k / 8) * Math.PI * 2
+        id = at(x + Math.cos(a) * ring, y + Math.sin(a) * ring)
+      }
+    }
+    return id
   }
 
   _pickLayer() {
