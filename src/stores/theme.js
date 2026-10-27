@@ -1,8 +1,9 @@
 import { defineStore } from 'pinia'
 
 // Follows the system setting until someone uses the toggle; then it's
-// remembered in this browser only.
-const media = window.matchMedia('(prefers-color-scheme: dark)')
+// remembered in this browser only. If the system setting can't be read, light.
+const media = typeof window.matchMedia === 'function' ? window.matchMedia('(prefers-color-scheme: dark)') : null
+const systemDark = () => !!media?.matches
 
 function stored() {
   try { return localStorage.getItem('theme') } catch { return null }
@@ -10,7 +11,7 @@ function stored() {
 
 export const useTheme = defineStore('theme', {
   state: () => ({
-    theme: document.documentElement.dataset.theme || (media.matches ? 'dark' : 'light'),
+    theme: document.documentElement.dataset.theme || (systemDark() ? 'dark' : 'light'),
   }),
   getters: {
     dark: (s) => s.theme === 'dark',
@@ -26,7 +27,7 @@ export const useTheme = defineStore('theme', {
       this.apply(next)
     },
     watchSystem() {
-      media.addEventListener('change', (e) => {
+      media?.addEventListener?.('change', (e) => {
         const s = stored()
         if (s !== 'light' && s !== 'dark') this.apply(e.matches ? 'dark' : 'light')
       })
