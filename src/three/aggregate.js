@@ -4,7 +4,8 @@
 // one-voxel joint between them, or straight on top of each other. When two
 // neighbours merge, the joint fills in and they read as one bigger room.
 //
-// Each room is split into five kinds of parts, one per layer, bottom to top:
+// Each room is split into five kinds of parts, one per layer, bottom to top
+// (the site shows each layer under the name of what I do, see content/layers.json):
 //   landscape  the site, which always covers the whole footprint
 //   structure  the skeleton: a thin frame inside every room, and thin
 //              columns under overhangs
@@ -117,7 +118,7 @@ export class Aggregator {
       for (const x of [x0 + lo, x0 + hi]) box(x - T / 2, y - T / 2, z0 + lo - T / 2, T, T, hi - lo + T)
     }
 
-    // the block: slab, then walls and windows
+    // the block: slab, then walls with windows
     for (let x = x0; x < x0 + ROOM; x++)
       for (let z = z0; z < z0 + ROOM; z++) add('slabs', x, y0, z, 'stone')
     const windows = new Set(SIDES.filter(() => this.rand() < 0.5).map(([a, b]) => `${a},${b}`))

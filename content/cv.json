@@ -20,6 +20,6 @@
     { "role": "Bachelor's in Architecture", "org": "ETSAB, UPC", "dates": "2014–2020", "note": "" }
   ],
   "software": ["Rhino", "Grasshopper", "Revit + Rhino.Inside", "AutoCAD", "Navisworks", "ACC / Forma", "Python", "Vue.js", "Vite", "Git", "Postman"],
-  "languages": ["Spanish and Catalan (native)", "English (C2)", "German (C2)", "French (B2)", "Korean (B2)", "Mandarin (A2)"],
+  "languages": ["Spanish and Catalan (native)", "English (C2)", "German (C1)", "French (B2)", "Korean (B2)", "Mandarin (A2)"],
   "certifications": ["Autodesk Forma, Autodesk Learning Center (2026)", "Postman API Beginner and Auth (2026)", "DataCamp Intermediate Python (2026)", "IBM Python 101 for Data Science (2025)"]
 }
