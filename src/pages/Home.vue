@@ -72,7 +72,8 @@ const safe = computed(() => wide.value
   : { left: 0, right: 0, top: 200, bottom: 150 })
 
 // Scrolling through the first section takes the cluster apart.
-const explode = computed(() => Math.min(1, progress.value / 0.8))
+// on phones the cluster stays together: no scroll, just tap a part
+const explode = computed(() => (wide.value ? Math.min(1, progress.value / 0.8) : 0))
 const card = computed(() => (p.selected ? p.layerItems(p.selected) : []))
 
 // The cluster: a new seed on every visit, or ?seed=12345 to get one back.
@@ -214,7 +215,7 @@ onBeforeUnmount(() => {
 
 <template>
   <main>
-    <section ref="stageEl" class="stage" aria-label="The cluster">
+    <section ref="stageEl" class="stage" :class="{ flat: !wide }" aria-label="The cluster">
       <div class="sticky" :class="{ lifted: aboutOpen }">
         <WeatherSky :class="fadeIn(3)" :style="order(3)" :kind="weather?.kind || 'clear'" :dark="theme.dark" :safe="safe" />
         <VoxelScene
@@ -322,6 +323,7 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .stage { height: 280vh; position: relative; }
+.stage.flat { height: 100vh; height: 100svh; }
 /* !important: the list also carries an inline scroll-fade opacity, which must not show it early */
 .pending { opacity: 0 !important; pointer-events: none; }
 .reveal { animation: fade-in .5s ease-out backwards; animation-delay: calc(var(--i) * 120ms); }
