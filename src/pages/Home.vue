@@ -68,7 +68,7 @@ const tagAt = (id) => {
 
 // keep the cluster in the space the text and the layer list leave free
 const safe = computed(() => wide.value
-  ? { left: 400, right: 300, top: 64, bottom: 88 }
+  ? { left: 400, right: 330, top: 64, bottom: 88 }
   : { left: 0, right: 0, top: 200, bottom: 150 })
 
 // Scrolling through the first section takes the cluster apart.

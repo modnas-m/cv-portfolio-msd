@@ -5,8 +5,7 @@ const emit = defineEmits(['choose'])
 </script>
 
 <template>
-  <nav class="layers" aria-label="Layers of the cluster, one project each">
-    <p class="caption">Layers</p>
+  <nav class="layers" aria-label="Areas of work">
     <ol>
       <li v-for="layer in p.layers" :key="layer.id">
         <button
@@ -31,8 +30,7 @@ const emit = defineEmits(['choose'])
 </template>
 
 <style scoped>
-.layers { width: 260px; }
-.caption { font-size: var(--t-small); color: var(--stone); margin-bottom: 8px; }
+.layers { width: 290px; }
 ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
 button {
   width: 100%; text-align: left; cursor: pointer;
@@ -49,7 +47,6 @@ button.on .layer { color: var(--signal); }
 
 @media (max-width: 899px) {
   .layers { width: 100%; }
-  .caption { display: none; }
   ol { grid-auto-flow: column; grid-auto-columns: max-content; overflow-x: auto; gap: 6px; padding-bottom: 4px; }
   button { grid-template-columns: 12px auto; column-gap: 8px; padding: 6px 10px; border-color: var(--ink); }
   .swatch { width: 10px; height: 10px; grid-row: auto; margin-top: 0; align-self: center; }

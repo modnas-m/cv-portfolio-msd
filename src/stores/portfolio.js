@@ -31,11 +31,10 @@ export const usePortfolio = defineStore('portfolio', {
         .map((p) => ({ key: p.slug, title: p.title, line: p.oneLiner, slug: p.slug }))
     },
     isCvLayer: (s) => (layerId) => !!s.layers.find((l) => l.id === layerId)?.cv,
-    // the short lines under a layer's name: its "summary" if it has one, else its project titles
+    // the short line under a layer's name, in the list and on the exploded tags
     layerSubtitles: (s) => (layerId) => {
       const layer = s.layers.find((l) => l.id === layerId)
-      if (layer?.summary) return [layer.summary]
-      return s.projects.filter((p) => p.layer === layerId).map((p) => p.title)
+      return layer?.blurb ? [layer.blurb] : []
     },
   },
 })

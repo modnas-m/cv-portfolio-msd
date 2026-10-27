@@ -16,8 +16,7 @@
       "Rhino.Inside Revit",
       "Grasshopper"
     ],
-    "note": "Details under NDA.",
-    "images": []
+    "note": "Details under NDA."
   },
   {
     "slug": "stadium-facade",
@@ -35,8 +34,7 @@
       "Rhino.Inside Revit",
       "Grasshopper"
     ],
-    "note": "Details under NDA.",
-    "images": []
+    "note": "Details under NDA."
   },
   {
     "slug": "sensi",
@@ -55,7 +53,126 @@
       "Web front end"
     ],
     "link": "https://blog.iaac.net/sensi-making-comfort-a-design-layer/",
-    "images": []
+    "team": "Emilie El Chidiac, Lakzhmy Mari Zaro, Charles Abi Chahine and me.",
+    "hero": {
+      "src": "sensi/galaxy.mp4",
+      "alt": "Galaxy view: rooms, senses and design levers as one glowing network",
+      "caption": "The galaxy view: rooms, senses and the design levers behind them, as one map.",
+      "size": "wide"
+    },
+    "sections": [
+      {
+        "heading": "A missing layer",
+        "text": "We model structure, cost, energy and code, but not how a room will feel. Sensi reads a floor plan and scores each room across six senses (thermal, visual, acoustic, spatial, olfactory and tactile) for one specific person.",
+        "figures": [
+          {
+            "src": "sensi/sensory-layer.webp",
+            "alt": "Exploded axonometric: floor plan, structure, cost and energy layers, with the sensory layer on top",
+            "caption": "The sensory layer: personal, honest, coupled.",
+            "size": "wide"
+          }
+        ]
+      },
+      {
+        "heading": "The ripple",
+        "text": "The senses pull on each other. A bigger window brings in daylight, but the glass is also a thinner sound barrier and leaks heat. Sensi shows the whole chain of consequences, not just the upgrade you see.",
+        "figures": [
+          {
+            "src": "sensi/ripple.webp",
+            "alt": "Ripple diagram: a bigger window gives visual +0.15, acoustic −0.10 and thermal −0.08",
+            "caption": "The upgrade you see, and the costs you don’t.",
+            "size": "wide"
+          }
+        ]
+      },
+      {
+        "heading": "Same plan, two people",
+        "text": "Comfort isn't universal. A child who minds noise and a grandmother who minds the cold flag different rooms in the same plan, so Sensi starts by learning who it's scoring for.",
+        "figures": [
+          {
+            "src": "sensi/two-lenses.webp",
+            "alt": "Split floor plan: the child's lens flags the loud living room, the grandmother's lens the cold bedroom",
+            "caption": "The same rooms, lit by who is standing in them.",
+            "size": "wide"
+          }
+        ]
+      },
+      {
+        "heading": "Act 1: Onboard",
+        "text": "A few questions, then a moodboard. Every image someone keeps nudges the weights of the six senses, which compile into a persona drawn as a petal rose. Picking images says more than rating tactile comfort from 1 to 5.",
+        "figures": [
+          {
+            "src": "sensi/onboard.mp4",
+            "alt": "Screen recording of the moodboard rounds and the persona petal rose",
+            "caption": "Moodboard rounds, then the persona.",
+            "size": "wide"
+          }
+        ]
+      },
+      {
+        "heading": "Levers and coupling",
+        "text": "Six design levers (glazing, orientation, ventilation, volume, materials and adjacency) each pull on one or more senses. A room's score is half mean, half worst: the sense that's wrong is the one you notice.",
+        "figures": [
+          {
+            "src": "sensi/coupling.webp",
+            "alt": "Coupling diagram linking six design levers to six senses, coded as helps, harms or trade-off",
+            "caption": "Which levers help, harm or trade off each sense.",
+            "size": "wide"
+          }
+        ]
+      },
+      {
+        "heading": "Act 2: Shape",
+        "text": "You talk to the plan in plain language. A fast model routes the request, a heavier one explains or plans the edit, and the room is re-scored. The scoring itself is deterministic, so every change can be traced, and every edit is kept as a checkpoint.",
+        "figures": [
+          {
+            "src": "sensi/agent-flow.webp",
+            "alt": "Flow diagram of the Shape agent: understand, edit and see anew",
+            "size": "wide"
+          },
+          {
+            "src": "sensi/scoring.mp4",
+            "alt": "Screen recording of a kitchen being scored and its conflicts listed",
+            "caption": "Scoring a room and finding its conflicts.",
+            "size": "half"
+          },
+          {
+            "src": "sensi/checkpoints.mp4",
+            "alt": "Screen recording of edits applied to the plan and kept as checkpoints",
+            "caption": "Edits, re-scored and kept as checkpoints.",
+            "size": "half"
+          }
+        ]
+      },
+      {
+        "heading": "Act 3: Report",
+        "text": "The final scores write a prompt, and a vision model renders each room. Only clearly good or bad senses add a phrase, so the render shows what actually changed.",
+        "figures": [
+          {
+            "src": "sensi/score-to-render.webp",
+            "alt": "Scores becoming a prompt, then a before and after render of a kitchen",
+            "size": "wide"
+          },
+          {
+            "src": "sensi/report.mp4",
+            "alt": "Screen recording comparing before and after renders of a room",
+            "caption": "Same room, same angle: only the change moves.",
+            "size": "wide"
+          }
+        ]
+      },
+      {
+        "heading": "What stays open",
+        "text": "The ripple and the veto did reprioritise rooms. Still open: there's no ground-truth data to prove the scores, and a confident number can quietly decide for the designer instead of helping them decide.",
+        "figures": [
+          {
+            "src": "sensi/learned.webp",
+            "alt": "Summary: what holds and what stays open",
+            "size": "wide"
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "hyperbuilding-forma",
@@ -75,7 +192,101 @@
       "Autodesk Platform Services"
     ],
     "link": "https://blog.iaac.net/turning-data-into-geometry-rhino-inside-revit-workflows-for-modelling-documenting/",
-    "images": []
+    "team": "Lakzhmy Mari Zaro, Emilie El Chidiac and me, as the studio's data team.",
+    "hero": {
+      "src": "hyperbuilding-forma/kpi-towers.webp",
+      "alt": "Three tower models coloured by thermal, acoustic and air-quality KPIs",
+      "caption": "Three KPIs, read as geometry in the model.",
+      "size": "wide"
+    },
+    "sections": [
+      {
+        "heading": "The data team",
+        "text": "Hyperbuilding 01 was one of three linked megastructures for Santiago de Chile, designed to filter air and water. Other teams worked on structure, façade and program. We were the coordination layer: naming conventions, information structure, the timing of decisions, and turning design into usable data.",
+        "figures": [
+          {
+            "src": "hyperbuilding-forma/data-team.webp",
+            "alt": "The data team’s four roles and their outputs, from weekly timeline to internal updates",
+            "size": "wide"
+          }
+        ]
+      },
+      {
+        "heading": "A control room",
+        "text": "A web app that pulls the project's information into one place: a KPI dashboard, a status diagram, a health check, and a timeline of each team's milestones.",
+        "figures": [
+          {
+            "src": "hyperbuilding-forma/control-room.webp",
+            "alt": "Control room web app: KPI dashboard, status diagram, health check and timeline",
+            "size": "wide"
+          }
+        ]
+      },
+      {
+        "heading": "Making data spatial",
+        "text": "If the data team doesn't draw geometry, how does its work show up in the model? Three parametric Revit families turn KPIs into elements: a thermal panel, a noise orbit and a pollutant sphere.",
+        "figures": [
+          {
+            "src": "hyperbuilding-forma/family-thermal.webp",
+            "alt": "Family A, Thermal Panel, with its shading and radiation parameters",
+            "caption": "Thermal panel",
+            "size": "third"
+          },
+          {
+            "src": "hyperbuilding-forma/family-noise.webp",
+            "alt": "Family B, Noise Orbit, with its machinery and exterior noise parameters",
+            "caption": "Noise orbit",
+            "size": "third"
+          },
+          {
+            "src": "hyperbuilding-forma/family-air.webp",
+            "alt": "Family C, Pollutant Sphere, with its pollution and clean air parameters",
+            "caption": "Pollutant sphere",
+            "size": "third"
+          }
+        ]
+      },
+      {
+        "heading": "The workflow",
+        "text": "Grasshopper reads positions from the shared Speckle model. Rhino.Inside Revit sets the levels, places the families and fills their shared parameters. Views, sheets and filters with gradient overrides follow, ready for RVT, IFC or PDF.",
+        "figures": [
+          {
+            "src": "hyperbuilding-forma/workflow.webp",
+            "alt": "Workflow diagram from base information through three Revit model versions to RVT, IFC and PDF",
+            "size": "wide"
+          }
+        ]
+      },
+      {
+        "heading": "The result",
+        "text": "Each KPI is readable in the model itself: boxes coloured by thermal compliance, noise orbits on every level, and pollutant spheres where purification demand is highest.",
+        "figures": [
+          {
+            "src": "hyperbuilding-forma/result-thermal.webp",
+            "alt": "Tower coloured by thermal comfort compliance, with radiation and shading details",
+            "caption": "Thermal comfort compliance.",
+            "size": "wide"
+          },
+          {
+            "src": "hyperbuilding-forma/result-noise.webp",
+            "alt": "Noise orbits stacked per level, with internal and external noise values",
+            "caption": "Acoustic comfort.",
+            "size": "half"
+          },
+          {
+            "src": "hyperbuilding-forma/result-air.webp",
+            "alt": "Pollutant spheres along the cores, with the purification table",
+            "caption": "Air purification.",
+            "size": "half"
+          }
+        ]
+      },
+      {
+        "heading": "Extended with Forma",
+        "text": "After the studio, I took the naming and parameter standard further on my own, using Autodesk Platform Services to check it automatically on the AEC Data Model.",
+        "figures": []
+      }
+    ]
   },
   {
     "slug": "speckle-bucketing",
@@ -94,6 +305,54 @@
       "Web viewer"
     ],
     "link": "https://blog.iaac.net/computational-bucketing-turning-bim-data-into-visual-insight-with-speckle-automate/",
-    "images": []
+    "team": "Lakzhmy Mari Zaro, Emilie El Chidiac and me.",
+    "hero": {
+      "src": "speckle-bucketing/buckets.mp4",
+      "alt": "Hyperbuilding model recoloured bucket by bucket, from red to blue",
+      "caption": "The model, bucket by bucket.",
+      "size": "wide"
+    },
+    "sections": [
+      {
+        "heading": "How it works",
+        "text": "On every new model version, the function flattens the object tree, reads a chosen numeric property and groups elements into range buckets. Each bucket is published as a sub-model, together with a manifest and a visualisation model that the website reads.",
+        "figures": [
+          {
+            "src": "speckle-bucketing/pipeline.webp",
+            "alt": "Diagram of the Automate function: inputs, function steps and outputs feeding the website viewer",
+            "size": "wide"
+          }
+        ]
+      },
+      {
+        "heading": "How many buckets",
+        "text": "Different properties spread differently, so the bucket count is a choice: Scott's rule, square root, Sturges' rule, or a manual number when domain knowledge matters more than statistics.",
+        "figures": [
+          {
+            "src": "speckle-bucketing/bucket-rules.webp",
+            "alt": "The four bucketing methods: Scott's rule, square root, Sturges' rule and manual input",
+            "size": "wide"
+          }
+        ]
+      },
+      {
+        "heading": "For the reviewer",
+        "text": "Set up the automation once and pick a property. The website shows the model coloured by range, with no Speckle account needed, and stays current with every version.",
+        "figures": [
+          {
+            "src": "speckle-bucketing/workflow.mp4",
+            "alt": "Setup steps: create the automation, select the property, fill out the fields",
+            "caption": "Setting it up in Speckle.",
+            "size": "wide"
+          },
+          {
+            "src": "speckle-bucketing/viewer.mp4",
+            "alt": "Website viewer switching between properties, each shown as a colour gradient",
+            "caption": "The website, switching between properties.",
+            "size": "wide"
+          }
+        ]
+      }
+    ]
   }
 ]
