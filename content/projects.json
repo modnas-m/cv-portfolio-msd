@@ -9,7 +9,7 @@
     "problem": "Planners and architects on a live project needed the island's earthworks and urbanism in Revit, beyond what native terrain tools handle well.",
     "approach": "Terrain built in Civil 3D and Rhino, then brought into Revit as native topography, floors, drainage and railings through Rhino.Inside and Grasshopper.",
     "result": "One live Revit model with terrain, roads, paving and urban systems, and total earthworks volume calculated in Grasshopper.",
-    "coordination": "[Pending: your role, the team, and how the planners' design changes reached the model.]",
+    "coordination": "I was the BIM modeller and automation specialist, turning the urbanism team's CAD proposals directly into Revit elements on a very large project, and coordinating with the other projects in the cluster that made up the island.",
     "tools": [
       "Civil 3D",
       "Rhino",
@@ -59,7 +59,7 @@
     "problem": "The client needed a precise Revit model of a stadium's façade structure, and then fabrication models for every piece, normally built in separate software.",
     "approach": "I automated both steps with Rhino.Inside Revit and Grasshopper: a full BIM model for clash detection, and scripts that read Revit parameters to export fabrication STP files.",
     "result": "When the Revit model changed, the fabrication files updated with it, and no separate fabrication software was needed.",
-    "coordination": "[Pending: your role, the team and external parties, and how the work was run.]",
+    "coordination": "I led the modelling and parametrisation of the fabrication parts, their transfer to the live Revit models, and clash detection. I worked directly with the client, under supervision, and a Grasshopper definition generated the STEP files for fabrication.",
     "tools": [
       "Revit",
       "Rhino.Inside Revit",
@@ -399,7 +399,7 @@
     "problem": "Checking how a property spreads across a model meant clicking through elements one by one, and left out anyone without a Speckle account.",
     "approach": "A Speckle Automate function groups elements by a chosen property and feeds a web viewer coloured by range.",
     "result": "A 25–30 minute model review now takes under three minutes.",
-    "coordination": "[Pending: your role in the team of three.]",
+    "coordination": "A team of three, with the work shared roughly equally across the Automate function, the bucketing methods, the outputs published to Speckle, and the website that reads them.",
     "tools": [
       "Speckle Automate",
       "Python",
