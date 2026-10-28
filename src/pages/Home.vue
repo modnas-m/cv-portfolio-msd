@@ -12,6 +12,7 @@ import { getWeather, KINDS } from '../weather.js'
 import { useTheme } from '../stores/theme.js'
 
 const p = usePortfolio()
+const year = new Date().getFullYear()
 const theme = useTheme()
 const weather = ref(null)
 const weatherLine = computed(() => {
@@ -313,6 +314,7 @@ onBeforeUnmount(() => {
               <RouterLink to="/cv">Read the CV</RouterLink> or
               <a :href="`mailto:${p.site.email}`">write to me</a>.
             </p>
+            <p class="credit">© {{ year }} {{ p.site.name }}</p>
           </div>
           </section>
         </div>
@@ -403,6 +405,7 @@ h1 { font-size: clamp(32px, 4.4vw, 56px); }
   background: var(--paper); border-top: 2px solid var(--ink); box-shadow: 0 -6px 0 var(--signal);
 }
 .about-inner { max-width: 1200px; margin: 0 auto; padding: 40px var(--gutter) 56px; }
+.credit { margin-top: 48px; font-size: 12px; color: var(--stone); }
 .about h2 { font-size: var(--t-h2); }
 .about ul { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 4px; }
 .about li { font-size: clamp(20px, 2.6vw, 32px); line-height: 1.25; max-width: 34ch; padding: 10px 0; border-top: 2px solid var(--ink); }
