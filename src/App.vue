@@ -7,15 +7,14 @@ import PixelIcon from './components/PixelIcon.vue'
 const p = usePortfolio()
 const theme = useTheme()
 theme.watchSystem()
-// The header stays put on the home page, where the cluster stays put too;
-// on every other page it scrolls away with the content.
+// the home page has no end to put the credit line at; it lives in its sheet instead
 const route = useRoute()
 const home = computed(() => route.name === 'home')
 const year = new Date().getFullYear()
 </script>
 
 <template>
-  <header class="bar" :class="{ fixed: home }">
+  <header class="bar">
     <RouterLink to="/" class="name" :aria-label="p.site.name">
       <span class="full">{{ p.site.name }}</span><span class="short" aria-hidden="true">María S. D.</span>
     </RouterLink>
@@ -33,13 +32,13 @@ const year = new Date().getFullYear()
 </template>
 
 <style scoped>
+/* fixed at the top, on a solid band so the page scrolls underneath, never through it */
 .bar {
-  position: absolute; inset: 0 0 auto 0; z-index: 20;
+  position: fixed; inset: 0 0 auto 0; z-index: 20; background: var(--paper);
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
   padding: 16px var(--gutter);
   pointer-events: none;
 }
-.bar.fixed { position: fixed; }
 .bar > * { pointer-events: auto; }
 .credit { padding: 0 var(--gutter) 24px; text-align: center; font-size: 12px; color: var(--stone); }
 .name { font-family: var(--font-pixel); font-size: 20px; text-decoration: none; background: var(--paper); padding: 0 4px; }
