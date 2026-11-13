@@ -6,10 +6,10 @@ Every visit grows a new cluster from a random seed, anywhere from 5 to 30 room b
 
 | Layer (as listed) | Part of the model | Holds |
 | --- | --- | --- |
-| Automation & API | the windows | Model data, made visible (Hyperbuilding + APS dashboard), Computational bucketing (Speckle Automate) |
-| Computational Design | the skeleton: a thin frame in every room, columns under overhangs | Stadium façade: BIM to fabrication |
-| BIM Management | the floor slabs | Island topography + urbanism |
-| Web Apps & AI | the rooms' walls | Sensi |
+| Automation & API | the windows | Model data geometrization (Hyperbuilding + APS dashboard), Computational bucketing (Speckle Automate) |
+| Computational Design | the skeleton: a thin frame in every room, columns under overhangs | Model-driven fabrication (stadium façade) |
+| BIM Management | the floor slabs | BIM native terrain modelling (island) |
+| Web Apps & AI | the rooms' walls | Personal comfort copilot (Sensi) |
 | Teaching | the site | the teaching posts from `cv.json` |
 
 Behind it, the sky shows Barcelona's weather right now (from [Open-Meteo](https://open-meteo.com), no key needed): a red sun, clouds, rain, snow, fog or a storm. In dark mode the sun becomes a moon and the windows light up. Preview any weather with `?weather=` and one of `clear`, `clouds`, `overcast`, `fog`, `drizzle`, `rain`, `pour`, `storm`, `snow`.
