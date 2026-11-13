@@ -1,6 +1,7 @@
 <script setup>
 import { usePortfolio } from '../stores/portfolio.js'
 const p = usePortfolio()
+const pdf = p.site.portfolioPdf ? import.meta.env.BASE_URL + p.site.portfolioPdf : null
 const sections = [
   ['Experience', 'experience'],
   ['Teaching', 'teaching'],
@@ -12,6 +13,7 @@ const sections = [
   <main class="page cv">
     <h1>CV</h1>
     <p class="lead">{{ p.cv.summary }}</p>
+    <a v-if="pdf" class="pixel-button download" :href="pdf" target="_blank" rel="noopener">Download portfolio (PDF)</a>
 
     <section v-for="[title, key] in sections" :key="key" class="block">
       <h2>{{ title }}</h2>
@@ -36,6 +38,7 @@ const sections = [
 .cv { max-width: 1040px; }
 h1 { font-size: var(--t-h1); }
 .lead { font-size: var(--t-lead); line-height: 1.4; margin-top: 24px; max-width: 46ch; }
+.download { margin-top: 28px; text-decoration: none; color: var(--ink); }
 .block { margin-top: 64px; }
 h2 { font-size: 24px; padding-bottom: 8px; border-bottom: 2px solid var(--ink); }
 ol { list-style: none; margin: 0; padding: 0; }

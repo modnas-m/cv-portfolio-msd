@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="560" viewBox="0 0 1400 560">
+<rect width="1400" height="560" fill="#ffffff"/>
+<path d="M110 118 L110 456" stroke="#d9d9d9" stroke-width="1" stroke-dasharray="3 4"/>
+<path d="M350 118 L350 456" stroke="#d9d9d9" stroke-width="1" stroke-dasharray="3 4"/>
+<path d="M110 456 L230 411 L350 456 L230 501 Z" fill="#ffffff" stroke="#a9a9a9" stroke-width="1.4" stroke-linejoin="round"/>
+<path d="M350 456 L374 456" stroke="#c4c4c4" stroke-width="1"/>
+<path d="M110 372 L230 327 L350 372 L230 417 Z" fill="#ffffff" stroke="#a9a9a9" stroke-width="1.4" stroke-linejoin="round"/>
+<path d="M350 372 L374 372" stroke="#c4c4c4" stroke-width="1"/>
+<path d="M110 288 L230 243 L350 288 L230 333 Z" fill="#ffffff" stroke="#a9a9a9" stroke-width="1.4" stroke-linejoin="round"/>
+<path d="M350 288 L374 288" stroke="#c4c4c4" stroke-width="1"/>
+<path d="M110 204 L230 159 L350 204 L230 249 Z" fill="#ffffff" stroke="#a9a9a9" stroke-width="1.4" stroke-linejoin="round"/>
+<path d="M350 204 L374 204" stroke="#c4c4c4" stroke-width="1"/>
+<path d="M230 411 L230 501 M168 434 L230 456" stroke="#a9a9a9" stroke-width="1.2" fill="none"/>
+<circle cx="230" cy="358" r="3" fill="#b4b4b4"/>
+<circle cx="200" cy="372" r="3" fill="#b4b4b4"/>
+<circle cx="260" cy="372" r="3" fill="#b4b4b4"/>
+<circle cx="230" cy="386" r="3" fill="#b4b4b4"/>
+<ellipse cx="230" cy="118" rx="126" ry="59" fill="#f7efd4"/>
+<path d="M110 118 L230 73 L350 118 L230 163 Z" fill="#fffaf0" stroke="#c99a1c" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M350 118 L374 118" stroke="#c99a1c" stroke-width="1.2"/>
+<circle cx="230" cy="96" r="6.5" fill="#e2643e"/>
+<circle cx="186" cy="111" r="6.5" fill="#c8a271"/>
+<circle cx="274" cy="111" r="6.5" fill="#d9ac2a"/>
+<circle cx="186" cy="126" r="6.5" fill="#5fae73"/>
+<circle cx="274" cy="126" r="6.5" fill="#8b7fd8"/>
+<circle cx="230" cy="140" r="6.5" fill="#3fa3cc"/>
+<text x="386" y="116" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="18" fill="#141414">THE SENSES</text>
+<rect x="524" y="97" width="68" height="25" rx="12.5" fill="none" stroke="#c99a1c" stroke-width="1.4"/>
+<text x="558" y="114" font-family="'JetBrains Mono', monospace" font-size="13" fill="#a37a0a" text-anchor="middle">+ new</text>
+<text x="386" y="142" font-family="'JetBrains Mono', monospace" font-size="15" fill="#6b6b6b">six senses, personal, coupled</text>
+<text x="386" y="210" font-family="'JetBrains Mono', monospace" font-size="17" fill="#8a8a8a">energy</text>
+<text x="386" y="294" font-family="'JetBrains Mono', monospace" font-size="17" fill="#8a8a8a">cost</text>
+<text x="386" y="378" font-family="'JetBrains Mono', monospace" font-size="17" fill="#8a8a8a">structure</text>
+<text x="386" y="462" font-family="'JetBrains Mono', monospace" font-size="17" fill="#3a3a3a">the floor plan</text>
+<text x="820" y="166" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="14" letter-spacing="1.4" fill="#6b6b6b">THE SENSORY LAYER IS</text>
+<circle cx="828" cy="212" r="6" fill="none" stroke="#c99a1c" stroke-width="2.2"/>
+<text x="854" y="218" font-family="Inter, sans-serif" font-weight="600" font-size="21" fill="#141414">personal</text>
+<text x="854" y="248" font-family="Inter, sans-serif" font-size="19" fill="#5c5c5c">scored for one person, never an average</text>
+<path d="M828 290 L836 305 L820 305 Z" fill="none" stroke="#d9542f" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="854" y="304" font-family="Inter, sans-serif" font-weight="600" font-size="21" fill="#141414">honest</text>
+<text x="854" y="334" font-family="Inter, sans-serif" font-size="19" fill="#5c5c5c">no averaging; the worst sense carries the weight</text>
+<path d="M820 387 C823 379 827 379 828 384 C829 389 833 389 836 381" fill="none" stroke="#7d70d0" stroke-width="2" stroke-linecap="round"/>
+<text x="854" y="390" font-family="Inter, sans-serif" font-weight="600" font-size="21" fill="#141414">coupled</text>
+<text x="854" y="420" font-family="Inter, sans-serif" font-size="19" fill="#5c5c5c">the senses pull on each other</text>
+</svg>

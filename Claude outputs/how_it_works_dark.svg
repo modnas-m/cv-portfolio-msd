@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="1200" viewBox="0 0 1080 1200">
+  <defs>
+    <clipPath id="clip-path-1">
+      <path d="M646 178.989 L646 190.989 L634 190.989 L634 178.989 Z"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path d="M287.8 213.789 L299.8 213.789 L299.8 225.789 L287.8 225.789 Z"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <path d="M455.2 213.789 L467.2 213.789 L467.2 225.789 L455.2 225.789 Z"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <path d="M646 266.989 L646 278.989 L634 278.989 L634 266.989 Z"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <path d="M646 364.989 L646 376.989 L634 376.989 L634 364.989 Z"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <path d="M287.8 306.789 L299.8 306.789 L299.8 318.789 L287.8 318.789 Z"/>
+    </clipPath>
+    <clipPath id="clip-path-7">
+      <path d="M455.2 306.789 L467.2 306.789 L467.2 318.789 L455.2 318.789 Z"/>
+    </clipPath>
+    <clipPath id="clip-path-8">
+      <path d="M287.8 413.789 L299.8 413.789 L299.8 425.789 L287.8 425.789 Z"/>
+    </clipPath>
+    <clipPath id="clip-path-9">
+      <path d="M455.2 413.789 L467.2 413.789 L467.2 425.789 L455.2 425.789 Z"/>
+    </clipPath>
+    <clipPath id="clip-path-10">
+      <path d="M646 480.989 L646 492.989 L634 492.989 L634 480.989 Z"/>
+    </clipPath>
+    <clipPath id="clip-path-11">
+      <path d="M646 562.989 L646 574.989 L634 574.989 L634 562.989 Z"/>
+    </clipPath>
+    <clipPath id="clip-path-12">
+      <path d="M956 868.989 L956 880.989 L944 880.989 L944 868.989 Z"/>
+    </clipPath>
+    <clipPath id="clip-path-13">
+      <path d="M646 704.017 L646 716.017 L634 716.017 L634 704.017 Z"/>
+    </clipPath>
+    <clipPath id="clip-path-14">
+      <path d="M806 868.989 L806 880.989 L794 880.989 L794 868.989 Z"/>
+    </clipPath>
+    <clipPath id="clip-path-15">
+      <path d="M646 868.989 L646 880.989 L634 880.989 L634 868.989 Z"/>
+    </clipPath>
+    <clipPath id="clip-path-16">
+      <path d="M505.2 754.817 L517.2 754.817 L517.2 766.817 L505.2 766.817 Z"/>
+    </clipPath>
+    <clipPath id="clip-path-17">
+      <path d="M726 960.989 L726 972.989 L714 972.989 L714 960.989 Z"/>
+    </clipPath>
+    <clipPath id="clip-path-18">
+      <path d="M726 1050.989 L726 1062.989 L714 1062.989 L714 1050.989 Z"/>
+    </clipPath>
+    <clipPath id="clip-path-19">
+      <path d="M535.2 1085.789 L547.2 1085.789 L547.2 1097.789 L535.2 1097.789 Z"/>
+    </clipPath>
+  </defs>
+  <title>how_it_works.svg</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path d="M0 0 L1080 0 L1080 1200 L0 1200 Z" fill="#0e0e0e"/>
+    <path d="M50 26.789 L300 26.789 C305.523 26.789 310 31.266 310 36.789 L310 1126.789 C310 1132.311 305.523 1136.789 300 1136.789 L50 1136.789 C44.477 1136.789 40 1132.311 40 1126.789 L40 36.789 C40 31.266 44.477 26.789 50 26.789 Z" fill="#0f2330"/>
+    <path d="M340 26.789 L1030 26.789 C1035.523 26.789 1040 31.266 1040 36.789 L1040 1126.789 C1040 1132.311 1035.523 1136.789 1030 1136.789 L340 1136.789 C334.477 1136.789 330 1132.311 330 1126.789 L330 36.789 C330 31.266 334.477 26.789 340 26.789 Z" fill="#171717" stroke="#2a2a2a"/>
+    <text transform="matrix(1 0 0 1 175 60.789)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="13" font-weight="bold" fill="#d6d6d6" letter-spacing="1.56" text-anchor="middle"><tspan x="0" y="0">AUTODESK</tspan></text>
+    <text transform="matrix(1 0 0 1 175 82.789)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="14" fill="#9a9a9a" text-anchor="middle"><tspan x="0" y="0">Forma · Platform Services</tspan></text>
+    <text transform="matrix(1 0 0 1 685 60.789)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="13" font-weight="bold" fill="#d6d6d6" letter-spacing="1.56" text-anchor="middle"><tspan x="0" y="0">DASHBOARD APP</tspan></text>
+    <text transform="matrix(1 0 0 1 685 82.789)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="14" fill="#9a9a9a" text-anchor="middle"><tspan x="0" y="0">Python back end · Vue front end</tspan></text>
+    <path d="M514 111.789 L766 111.789 C779.255 111.789 790 122.534 790 135.789 L790 135.789 C790 149.043 779.255 159.789 766 159.789 L514 159.789 C500.745 159.789 490 149.043 490 135.789 L490 135.789 C490 122.534 500.745 111.789 514 111.789 Z" fill="#1f1f1f" stroke="#9a9a9a" stroke-width="1.5"/>
+    <text transform="matrix(1 0 0 1 640 143.089)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="18" fill="#f2f2f2" text-anchor="middle"><tspan x="0" y="0">Open the dashboard</tspan></text>
+    <path d="M640 159.789 L640 189.789" fill="none" stroke="#9a9a9a" stroke-width="1.5"/>
+    <g clip-path="url(#clip-path-1)">
+      <path d="M646 178.989 L640 190.989 L634 178.989 Z" fill="#9a9a9a"/>
+    </g>
+    <path d="M476 191.789 L804 191.789 C807.314 191.789 810 194.475 810 197.789 L810 241.789 C810 245.102 807.314 247.789 804 247.789 L476 247.789 C472.686 247.789 470 245.102 470 241.789 L470 197.789 C470 194.475 472.686 191.789 476 191.789 Z" fill="#1f1f1f" stroke="#9a9a9a" stroke-width="1.5"/>
+    <text transform="matrix(1 0 0 1 640 227.089)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="18" fill="#f2f2f2" text-anchor="middle"><tspan x="0" y="0">Sign in with your Autodesk account</tspan></text>
+    <path d="M71 191.789 L279 191.789 C282.314 191.789 285 194.475 285 197.789 L285 241.789 C285 245.102 282.314 247.789 279 247.789 L71 247.789 C67.686 247.789 65 245.102 65 241.789 L65 197.789 C65 194.475 67.686 191.789 71 191.789 Z" fill="#1f1f1f" stroke="#2fb0ee" stroke-width="1.5"/>
+    <text transform="matrix(1 0 0 1 175 227.089)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="18" fill="#f2f2f2" text-anchor="middle"><tspan x="0" y="0">Autodesk sign-in</tspan></text>
+    <path d="M289 219.789 L466 219.789" fill="none" stroke="#2fb0ee" stroke-width="1.5"/>
+    <g>
+      <g clip-path="url(#clip-path-2)">
+        <path d="M299.8 213.789 L287.8 219.789 L299.8 225.789 Z" fill="#2fb0ee"/>
+      </g>
+      <g clip-path="url(#clip-path-3)">
+        <path d="M455.2 213.789 L467.2 219.789 L455.2 225.789 Z" fill="#2fb0ee"/>
+      </g>
+    </g>
+    <text transform="matrix(1 0 0 1 377 209.789)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="14" font-style="italic" fill="#b4b4b4" text-anchor="middle"><tspan x="0" y="0">OAuth</tspan></text>
+    <path d="M640 247.789 L640 277.789" fill="none" stroke="#9a9a9a" stroke-width="1.5"/>
+    <g clip-path="url(#clip-path-4)">
+      <path d="M646 266.989 L640 278.989 L634 266.989 Z" fill="#9a9a9a"/>
+    </g>
+    <path d="M476 279.789 L804 279.789 C807.314 279.789 810 282.475 810 285.789 L810 339.789 C810 343.102 807.314 345.789 804 345.789 L476 345.789 C472.686 345.789 470 343.102 470 339.789 L470 285.789 C470 282.475 472.686 279.789 476 279.789 Z" fill="#1f1f1f" stroke="#9a9a9a" stroke-width="1.5"/>
+    <text transform="matrix(1 0 0 1 640 309.089)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="18" fill="#f2f2f2" text-anchor="middle"><tspan x="0" y="0">Find the model</tspan></text>
+    <text transform="matrix(1 0 0 1 640 332.689)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="14" fill="#a8a8a8" text-anchor="middle"><tspan x="0" y="0">hub → project → model</tspan></text>
+    <path d="M640 345.789 L640 375.789" fill="none" stroke="#9a9a9a" stroke-width="1.5"/>
+    <g clip-path="url(#clip-path-5)">
+      <path d="M646 364.989 L640 376.989 L634 364.989 Z" fill="#9a9a9a"/>
+    </g>
+    <path d="M476 377.789 L804 377.789 C807.314 377.789 810 380.475 810 383.789 L810 455.789 C810 459.102 807.314 461.789 804 461.789 L476 461.789 C472.686 461.789 470 459.102 470 455.789 L470 383.789 C470 380.475 472.686 377.789 476 377.789 Z" fill="#1f1f1f" stroke="#9a9a9a" stroke-width="1.5"/>
+    <text transform="matrix(1 0 0 1 640 407.089)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="18" fill="#f2f2f2" text-anchor="middle"><tspan x="0" y="0">Get each family&apos;s elements</tspan></text>
+    <text transform="matrix(1 0 0 1 640 430.689)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="14" fill="#a8a8a8" text-anchor="middle"><tspan x="0" y="0">only the KPI parameters</tspan></text>
+    <text transform="matrix(1 0 0 1 640 450.689)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="14" fill="#a8a8a8" text-anchor="middle"><tspan x="0" y="0">page by page · for any version</tspan></text>
+    <path d="M71 279.789 L279 279.789 C282.314 279.789 285 282.475 285 285.789 L285 455.789 C285 459.102 282.314 461.789 279 461.789 L71 461.789 C67.686 461.789 65 459.102 65 455.789 L65 285.789 C65 282.475 67.686 279.789 71 279.789 Z" fill="#1f1f1f" stroke="#2fb0ee" stroke-width="1.5"/>
+    <text transform="matrix(1 0 0 1 175 363.089)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="18" fill="#f2f2f2" text-anchor="middle"><tspan x="0" y="0">AEC Data Model API</tspan></text>
+    <text transform="matrix(1 0 0 1 175 387.689)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="14" fill="#a8a8a8" text-anchor="middle"><tspan x="0" y="0">GraphQL</tspan></text>
+    <path d="M289 312.789 L466 312.789" fill="none" stroke="#2fb0ee" stroke-width="1.5"/>
+    <g>
+      <g clip-path="url(#clip-path-6)">
+        <path d="M299.8 306.789 L287.8 312.789 L299.8 318.789 Z" fill="#2fb0ee"/>
+      </g>
+      <g clip-path="url(#clip-path-7)">
+        <path d="M455.2 306.789 L467.2 312.789 L455.2 318.789 Z" fill="#2fb0ee"/>
+      </g>
+    </g>
+    <path d="M289 419.789 L466 419.789" fill="none" stroke="#2fb0ee" stroke-width="1.5"/>
+    <g>
+      <g clip-path="url(#clip-path-8)">
+        <path d="M299.8 413.789 L287.8 419.789 L299.8 425.789 Z" fill="#2fb0ee"/>
+      </g>
+      <g clip-path="url(#clip-path-9)">
+        <path d="M455.2 413.789 L467.2 419.789 L455.2 425.789 Z" fill="#2fb0ee"/>
+      </g>
+    </g>
+    <text transform="matrix(1 0 0 1 377 302.789)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="14" font-style="italic" fill="#b4b4b4" text-anchor="middle"><tspan x="0" y="0">ask</tspan></text>
+    <text transform="matrix(1 0 0 1 377 409.789)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="14" font-style="italic" fill="#b4b4b4" text-anchor="middle"><tspan x="0" y="0">elements</tspan></text>
+    <path d="M640 461.789 L640 491.789" fill="none" stroke="#9a9a9a" stroke-width="1.5"/>
+    <g clip-path="url(#clip-path-10)">
+      <path d="M646 480.989 L640 492.989 L634 480.989 Z" fill="#9a9a9a"/>
+    </g>
+    <path d="M476 493.789 L804 493.789 C807.314 493.789 810 496.475 810 499.789 L810 537.789 C810 541.102 807.314 543.789 804 543.789 L476 543.789 C472.686 543.789 470 541.102 470 537.789 L470 499.789 C470 496.475 472.686 493.789 476 493.789 Z" fill="#1f1f1f" stroke="#9a9a9a" stroke-width="1.5"/>
+    <text transform="matrix(1 0 0 1 640 526.089)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="18" fill="#f2f2f2" text-anchor="middle"><tspan x="0" y="0">For every element and parameter</tspan></text>
+    <path d="M640 543.789 L640 573.789" fill="none" stroke="#9a9a9a" stroke-width="1.5"/>
+    <g clip-path="url(#clip-path-11)">
+      <path d="M646 562.989 L640 574.989 L634 562.989 Z" fill="#9a9a9a"/>
+    </g>
+    <path d="M520 625.789 L640 575.789 L760 625.789 L640 675.789 Z" fill="#1f1f1f" stroke="#9a9a9a" stroke-width="1.5"/>
+    <text transform="matrix(1 0 0 1 640 633.089)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="18" fill="#f2f2f2" text-anchor="middle"><tspan x="0" y="0">Has a value?</tspan></text>
+    <path d="M760 625.789 L950 625.789 L950 879.789" fill="none" stroke="#9a9a9a" stroke-width="1.5"/>
+    <g clip-path="url(#clip-path-12)">
+      <path d="M956 868.989 L950 880.989 L944 868.989 Z" fill="#9a9a9a"/>
+    </g>
+    <text transform="matrix(1 0 0 1 790 615.789)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="14" font-style="italic" fill="#b4b4b4"><tspan x="0" y="0">no</tspan></text>
+    <path d="M640 675.789 L640 723.789" fill="none" stroke="#9a9a9a" stroke-width="1.5"/>
+    <g clip-path="url(#clip-path-13)">
+      <path d="M646 704.017 L640 716.017 L634 704.017 Z" fill="#9a9a9a"/>
+    </g>
+    <text transform="matrix(1 0 0 1 650 693.817)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="14" font-style="italic" fill="#b4b4b4"><tspan x="0" y="0">yes</tspan></text>
+    <path d="M520 766.817 L640 716.817 L760 766.817 L640 816.817 Z" fill="#1f1f1f" stroke="#9a9a9a" stroke-width="1.5"/>
+    <text transform="matrix(1 0 0 1 640 774.117)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="18" fill="#f2f2f2" text-anchor="middle"><tspan x="0" y="0">Follows the rules?</tspan></text>
+    <path d="M760 766.817 L800 766.817 L800 879.789" fill="none" stroke="#9a9a9a" stroke-width="1.5"/>
+    <g clip-path="url(#clip-path-14)">
+      <path d="M806 868.989 L800 880.989 L794 868.989 Z" fill="#9a9a9a"/>
+    </g>
+    <text transform="matrix(1 0 0 1 770 760.49)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="14" font-style="italic" fill="#b4b4b4"><tspan x="0" y="0">no</tspan></text>
+    <path d="M640 816.817 L640 879.789" fill="none" stroke="#9a9a9a" stroke-width="1.5"/>
+    <g clip-path="url(#clip-path-15)">
+      <path d="M646 868.989 L640 880.989 L634 868.989 Z" fill="#9a9a9a"/>
+    </g>
+    <text transform="matrix(1 0 0 1 650 847.847)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="14" font-style="italic" fill="#b4b4b4"><tspan x="0" y="0">yes</tspan></text>
+    <path d="M345 719.817 L500 719.817 L500 801.817 C474.667 791.151 448.667 791.151 422 801.817 C396.667 812.484 371 812.484 345 801.817 Z" fill="#1f1f1f" stroke="#9a9a9a" stroke-width="1.5"/>
+    <text transform="matrix(1 0 0 1 422 744.219)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#f2f2f2" text-anchor="middle"><tspan x="0" y="0">Rules (CSV)</tspan></text>
+    <text transform="matrix(1 0 0 1 422 767.119)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="13" fill="#a8a8a8" text-anchor="middle"><tspan x="0" y="0">format · allowed list</tspan></text>
+    <text transform="matrix(1 0 0 1 422 785.119)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="13" fill="#a8a8a8" text-anchor="middle"><tspan x="0" y="0">range · unique</tspan></text>
+    <path d="M500 760.817 L516 760.817" fill="none" stroke="#9a9a9a" stroke-width="1.5"/>
+    <g clip-path="url(#clip-path-16)">
+      <path d="M505.2 754.817 L517.2 760.817 L505.2 766.817 Z" fill="#9a9a9a"/>
+    </g>
+    <path d="M586 881.789 L694 881.789 C697.314 881.789 700 884.475 700 887.789 L700 923.789 C700 927.102 697.314 929.789 694 929.789 L586 929.789 C582.686 929.789 580 927.102 580 923.789 L580 887.789 C580 884.475 582.686 881.789 586 881.789 Z" fill="#1f1f1f" stroke="#86c94a" stroke-width="2"/>
+    <text transform="matrix(1 0 0 1 640 913.089)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="18" fill="#f2f2f2" text-anchor="middle"><tspan x="0" y="0">OK</tspan></text>
+    <path d="M736 881.789 L864 881.789 C867.314 881.789 870 884.475 870 887.789 L870 923.789 C870 927.102 867.314 929.789 864 929.789 L736 929.789 C732.686 929.789 730 927.102 730 923.789 L730 887.789 C730 884.475 732.686 881.789 736 881.789 Z" fill="#1f1f1f" stroke="#f0a32a" stroke-width="2"/>
+    <text transform="matrix(1 0 0 1 800 912.389)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="16" fill="#f2f2f2" text-anchor="middle"><tspan x="0" y="0">Breaks standard</tspan></text>
+    <path d="M891 881.789 L1009 881.789 C1012.314 881.789 1015 884.475 1015 887.789 L1015 923.789 C1015 927.102 1012.314 929.789 1009 929.789 L891 929.789 C887.686 929.789 885 927.102 885 923.789 L885 887.789 C885 884.475 887.686 881.789 891 881.789 Z" fill="#1f1f1f" stroke="#ff4d4d" stroke-width="2"/>
+    <text transform="matrix(1 0 0 1 950 912.389)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="16" fill="#f2f2f2" text-anchor="middle"><tspan x="0" y="0">Missing</tspan></text>
+    <path d="M640 929.789 L640 951.789 M800 929.789 L800 951.789 M950 929.789 L950 951.789 M640 951.789 L950 951.789" fill="none" stroke="#9a9a9a" stroke-width="1.5"/>
+    <path d="M720 951.789 L720 971.789" fill="none" stroke="#9a9a9a" stroke-width="1.5"/>
+    <g clip-path="url(#clip-path-17)">
+      <path d="M726 960.989 L720 972.989 L714 960.989 Z" fill="#9a9a9a"/>
+    </g>
+    <path d="M556 973.789 L884 973.789 C887.314 973.789 890 976.475 890 979.789 L890 1033.789 C890 1037.102 887.314 1039.789 884 1039.789 L556 1039.789 C552.686 1039.789 550 1037.102 550 1033.789 L550 979.789 C550 976.475 552.686 973.789 556 973.789 Z" fill="#1f1f1f" stroke="#9a9a9a" stroke-width="1.5"/>
+    <text transform="matrix(1 0 0 1 720 1003.089)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="18" fill="#f2f2f2" text-anchor="middle"><tspan x="0" y="0">Count per parameter, family, version</tspan></text>
+    <text transform="matrix(1 0 0 1 720 1026.689)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="14" fill="#a8a8a8" text-anchor="middle"><tspan x="0" y="0">and list the Revit IDs to fix</tspan></text>
+    <path d="M720 1039.789 L720 1061.789" fill="none" stroke="#9a9a9a" stroke-width="1.5"/>
+    <g clip-path="url(#clip-path-18)">
+      <path d="M726 1050.989 L720 1062.989 L714 1050.989 Z" fill="#9a9a9a"/>
+    </g>
+    <path d="M578 1063.789 L862 1063.789 C877.464 1063.789 890 1076.325 890 1091.789 L890 1091.789 C890 1107.253 877.464 1119.789 862 1119.789 L578 1119.789 C562.536 1119.789 550 1107.253 550 1091.789 L550 1091.789 C550 1076.325 562.536 1063.789 578 1063.789 Z" fill="#1f1f1f" stroke="#9a9a9a" stroke-width="1.5"/>
+    <text transform="matrix(1 0 0 1 720 1091.089)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="18" fill="#f2f2f2" text-anchor="middle"><tspan x="0" y="0">See it in the dashboard</tspan></text>
+    <text transform="matrix(1 0 0 1 720 1110.689)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="14" fill="#a8a8a8" text-anchor="middle"><tspan x="0" y="0">overview · evolution · families</tspan></text>
+    <path d="M60 986.789 L290 986.789" fill="#000000" stroke="#2e5a72" stroke-dasharray="4 4"/>
+    <text transform="matrix(1 0 0 1 175 1014.789)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#d6d6d6" letter-spacing="1.44" text-anchor="middle"><tspan x="0" y="0">OFFLINE MODE</tspan></text>
+    <g>
+      <path d="M85 1046.789 L85 1092.789 C85 1100.521 125.294 1106.789 175 1106.789 C224.706 1106.789 265 1100.521 265 1092.789 L265 1046.789" fill="#1f1f1f"/>
+      <path d="M85.75 1046.789 L85.75 1049.271 L84.25 1049.271 L84.25 1046.789 Z M85.75 1054.236 L85.75 1059.201 L84.25 1059.201 L84.25 1054.236 Z M85.75 1064.166 L85.75 1069.131 L84.25 1069.131 L84.25 1064.166 Z M85.75 1074.096 L85.75 1079.061 L84.25 1079.061 L84.25 1074.096 Z M85.75 1084.026 L85.75 1088.992 L84.25 1088.992 L84.25 1084.026 Z M85.953 1093.57 C86.42 1094.486 87.6 1095.396 89.428 1096.304 L88.761 1097.648 C86.645 1096.596 85.229 1095.454 84.616 1094.251 Z M93.939 1098.091 C95.356 1098.553 96.934 1099.002 98.663 1099.435 L98.299 1100.89 C96.536 1100.448 94.924 1099.99 93.474 1099.516 Z M103.474 1100.522 C105.01 1100.836 106.631 1101.14 108.331 1101.432 L108.076 1102.911 C106.361 1102.615 104.725 1102.309 103.173 1101.991 Z M113.216 1102.211 C114.797 1102.444 116.433 1102.668 118.12 1102.883 L117.931 1104.371 C116.234 1104.155 114.588 1103.929 112.997 1103.694 Z M123.038 1103.466 C124.642 1103.644 126.286 1103.813 127.966 1103.974 L127.823 1105.467 C126.136 1105.305 124.485 1105.135 122.873 1104.957 Z M132.902 1104.413 C134.52 1104.547 136.168 1104.673 137.844 1104.792 L137.738 1106.288 C136.056 1106.169 134.403 1106.042 132.778 1105.908 Z M142.79 1105.114 C144.418 1105.211 146.068 1105.301 147.74 1105.384 L147.666 1106.882 C145.989 1106.799 144.333 1106.709 142.7 1106.611 Z M152.693 1105.605 C154.327 1105.67 155.979 1105.728 157.648 1105.778 L157.602 1107.278 C155.929 1107.227 154.272 1107.169 152.633 1107.103 Z M162.604 1105.907 C164.243 1105.942 165.896 1105.97 167.562 1105.991 L167.543 1107.491 C165.873 1107.47 164.215 1107.442 162.572 1107.406 Z M172.521 1106.033 C173.344 1106.037 174.171 1106.039 175 1106.039 C175.829 1106.039 176.656 1106.037 177.479 1106.033 L177.486 1107.533 C176.66 1107.537 175.831 1107.539 175 1107.539 C174.169 1107.539 173.34 1107.537 172.514 1107.533 Z M182.438 1105.991 C184.104 1105.97 185.757 1105.942 187.396 1105.907 L187.428 1107.406 C185.785 1107.442 184.127 1107.47 182.457 1107.491 Z M192.352 1105.778 C194.021 1105.728 195.673 1105.67 197.307 1105.605 L197.367 1107.103 C195.728 1107.169 194.071 1107.227 192.398 1107.278 Z M202.26 1105.384 C203.932 1105.301 205.582 1105.211 207.21 1105.114 L207.3 1106.611 C205.667 1106.709 204.011 1106.799 202.334 1106.882 Z M212.156 1104.792 C213.832 1104.673 215.48 1104.547 217.098 1104.413 L217.222 1105.908 C215.597 1106.042 213.944 1106.169 212.262 1106.288 Z M222.034 1103.974 C223.714 1103.813 225.358 1103.644 226.962 1103.466 L227.127 1104.957 C225.515 1105.135 223.864 1105.305 222.177 1105.467 Z M231.88 1102.883 C233.567 1102.668 235.203 1102.444 236.784 1102.211 L237.003 1103.694 C235.412 1103.929 233.766 1104.155 232.069 1104.371 Z M241.669 1101.432 C243.369 1101.14 244.99 1100.836 246.526 1100.522 L246.827 1101.991 C245.275 1102.309 243.639 1102.615 241.924 1102.911 Z M251.337 1099.435 C253.066 1099.002 254.644 1098.553 256.061 1098.091 L256.526 1099.516 C255.076 1099.99 253.464 1100.448 251.701 1100.89 Z M260.572 1096.304 C262.4 1095.396 263.58 1094.486 264.047 1093.57 L265.384 1094.251 C264.771 1095.454 263.355 1096.596 261.239 1097.648 Z M264.25 1088.992 L264.25 1084.026 L265.75 1084.026 L265.75 1088.992 Z M264.25 1079.061 L264.25 1074.096 L265.75 1074.096 L265.75 1079.061 Z M264.25 1069.131 L264.25 1064.166 L265.75 1064.166 L265.75 1069.131 Z M264.25 1059.201 L264.25 1054.236 L265.75 1054.236 L265.75 1059.201 Z M264.25 1049.271 L264.25 1046.789 L265.75 1046.789 L265.75 1049.271 Z" fill="#8f8f8f"/>
+    </g>
+    <g>
+      <path d="M265 1046.789 C265 1054.521 224.706 1060.789 175 1060.789 C125.294 1060.789 85 1054.521 85 1046.789 C85 1039.057 125.294 1032.789 175 1032.789 C224.706 1032.789 265 1039.057 265 1046.789 Z" fill="#1f1f1f"/>
+      <path d="M264.433 1044.066 C265.296 1044.92 265.75 1045.844 265.75 1046.789 C265.75 1047.734 265.296 1048.657 264.433 1049.511 L263.378 1048.445 C263.956 1047.873 264.25 1047.333 264.25 1046.789 C264.25 1046.244 263.956 1045.704 263.378 1045.132 Z M259.921 1052.255 C258.547 1052.844 256.935 1053.413 255.103 1053.961 L254.673 1052.524 C256.45 1051.992 258.009 1051.442 259.33 1050.876 Z M250.198 1055.254 C248.651 1055.616 247 1055.967 245.251 1056.304 L244.966 1054.832 C246.696 1054.498 248.328 1054.151 249.856 1053.794 Z M240.279 1057.186 C238.678 1057.448 237.014 1057.699 235.29 1057.941 L235.082 1056.455 C236.795 1056.215 238.448 1055.965 240.037 1055.706 Z M230.29 1058.592 C228.664 1058.788 226.994 1058.976 225.282 1059.156 L225.126 1057.664 C226.83 1057.485 228.492 1057.298 230.11 1057.102 Z M220.267 1059.645 C218.626 1059.793 216.952 1059.934 215.247 1060.066 L215.131 1058.571 C216.829 1058.439 218.497 1058.299 220.132 1058.151 Z M210.223 1060.427 C208.572 1060.537 206.896 1060.638 205.196 1060.732 L205.113 1059.235 C206.807 1059.141 208.478 1059.04 210.124 1058.931 Z M200.167 1060.985 C198.509 1061.06 196.831 1061.127 195.135 1061.187 L195.082 1059.688 C196.773 1059.628 198.446 1059.561 200.099 1059.486 Z M190.103 1061.343 C188.44 1061.386 186.761 1061.423 185.069 1061.452 L185.043 1059.952 C186.731 1059.923 188.405 1059.887 190.063 1059.843 Z M180.035 1061.517 C178.368 1061.531 176.689 1061.539 175 1061.539 L175 1060.039 C176.685 1060.039 178.359 1060.031 180.022 1060.017 Z M169.965 1061.517 C168.275 1061.503 166.596 1061.481 164.931 1061.452 L164.957 1059.952 C166.618 1059.981 168.292 1060.003 169.978 1060.017 Z M159.897 1061.343 C158.203 1061.298 156.525 1061.246 154.865 1061.187 L154.918 1059.688 C156.574 1059.747 158.247 1059.799 159.937 1059.843 Z M149.833 1060.985 C148.136 1060.908 146.459 1060.824 144.804 1060.732 L144.887 1059.235 C146.537 1059.326 148.209 1059.41 149.901 1059.486 Z M139.777 1060.427 C138.075 1060.315 136.4 1060.195 134.753 1060.066 L134.869 1058.571 C136.51 1058.699 138.18 1058.819 139.876 1058.931 Z M129.733 1059.645 C128.025 1059.49 126.353 1059.327 124.718 1059.156 L124.874 1057.664 C126.502 1057.834 128.167 1057.997 129.868 1058.151 Z M119.71 1058.592 C117.993 1058.384 116.325 1058.167 114.71 1057.941 L114.918 1056.455 C116.524 1056.68 118.182 1056.896 119.89 1057.102 Z M109.721 1057.186 C107.988 1056.903 106.329 1056.609 104.749 1056.304 L105.034 1054.832 C106.599 1055.134 108.243 1055.425 109.963 1055.706 Z M99.802 1055.254 C98.027 1054.838 96.389 1054.407 94.897 1053.961 L95.327 1052.524 C96.789 1052.961 98.398 1053.385 100.144 1053.794 Z M90.079 1052.255 C88.059 1051.389 86.535 1050.471 85.567 1049.511 L86.622 1048.445 C87.457 1049.272 88.823 1050.084 90.67 1050.876 Z M85.567 1044.066 C86.535 1043.107 88.059 1042.188 90.079 1041.323 L90.67 1042.701 C88.823 1043.493 87.457 1044.305 86.622 1045.132 Z M94.897 1039.616 C96.389 1039.171 98.027 1038.739 99.802 1038.323 L100.144 1039.784 C98.398 1040.193 96.789 1040.616 95.327 1041.054 Z M104.749 1037.273 C106.329 1036.968 107.988 1036.674 109.721 1036.391 L109.963 1037.871 C108.243 1038.152 106.599 1038.444 105.034 1038.746 Z M114.71 1035.637 C116.325 1035.411 117.993 1035.193 119.71 1034.986 L119.89 1036.475 C118.182 1036.681 116.524 1036.897 114.918 1037.122 Z M124.718 1034.421 C126.353 1034.25 128.025 1034.087 129.733 1033.933 L129.868 1035.427 C128.167 1035.58 126.502 1035.743 124.874 1035.913 Z M134.753 1033.511 C136.4 1033.383 138.075 1033.262 139.777 1033.15 L139.876 1034.647 C138.18 1034.759 136.51 1034.879 134.869 1035.006 Z M144.804 1032.845 C146.459 1032.753 148.136 1032.669 149.833 1032.593 L149.901 1034.091 C148.209 1034.167 146.537 1034.251 144.887 1034.343 Z M154.865 1032.39 C156.525 1032.331 158.203 1032.279 159.897 1032.235 L159.937 1033.734 C158.247 1033.778 156.574 1033.83 154.918 1033.889 Z M164.931 1032.125 C166.596 1032.096 168.275 1032.075 169.965 1032.06 L169.978 1033.56 C168.292 1033.575 166.618 1033.596 164.957 1033.625 Z M175 1032.039 C176.689 1032.039 178.368 1032.046 180.035 1032.06 L180.022 1033.56 C178.359 1033.546 176.685 1033.539 175 1033.539 Z M185.069 1032.125 C186.761 1032.154 188.44 1032.191 190.103 1032.235 L190.063 1033.734 C188.405 1033.691 186.731 1033.654 185.043 1033.625 Z M195.135 1032.39 C196.831 1032.45 198.509 1032.518 200.167 1032.593 L200.099 1034.091 C198.446 1034.016 196.773 1033.949 195.082 1033.889 Z M205.196 1032.845 C206.896 1032.939 208.572 1033.041 210.223 1033.15 L210.124 1034.647 C208.478 1034.538 206.807 1034.436 205.113 1034.343 Z M215.247 1033.511 C216.952 1033.643 218.626 1033.784 220.267 1033.933 L220.132 1035.427 C218.497 1035.279 216.829 1035.138 215.131 1035.006 Z M225.282 1034.421 C226.994 1034.601 228.664 1034.789 230.29 1034.986 L230.11 1036.475 C228.492 1036.279 226.83 1036.092 225.126 1035.913 Z M235.29 1035.637 C237.014 1035.878 238.678 1036.13 240.279 1036.391 L240.037 1037.871 C238.448 1037.612 236.795 1037.362 235.082 1037.122 Z M245.251 1037.273 C247 1037.61 248.651 1037.961 250.198 1038.323 L249.856 1039.784 C248.328 1039.426 246.696 1039.079 244.966 1038.746 Z M255.103 1039.616 C256.935 1040.164 258.547 1040.734 259.921 1041.323 L259.33 1042.701 C258.009 1042.135 256.45 1041.585 254.673 1041.054 Z" fill="#8f8f8f"/>
+    </g>
+    <text transform="matrix(1 0 0 1 175 1076.389)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="16" fill="#f2f2f2" text-anchor="middle"><tspan x="0" y="0">Saved results</tspan></text>
+    <text transform="matrix(1 0 0 1 175 1095.289)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="13" fill="#a8a8a8" text-anchor="middle"><tspan x="0" y="0">no API calls</tspan></text>
+    <path d="M265 1091.789 L546 1091.789" fill="none" stroke="#8f8f8f" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <g clip-path="url(#clip-path-19)">
+      <path d="M535.2 1085.789 L547.2 1091.789 L535.2 1097.789 Z" fill="#8f8f8f"/>
+    </g>
+    <text transform="matrix(1 0 0 1 405 1081.789)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="14" font-style="italic" fill="#b4b4b4" text-anchor="middle"><tspan x="0" y="0">instead of live data</tspan></text>
+    <text transform="matrix(1 0 0 1 37.866 1173.896)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="14" fill="#a8a8a8"><tspan x="0" y="0">Based on the Integrative Modelling Seminar 2025-26, MaCAD (IAAC)</tspan></text>
+    <text transform="matrix(1 0 0 1 1020 1173.896)" x="0" y="0" xml:space="preserve" font-family="Inter, sans-serif" font-size="14" fill="#a8a8a8" text-anchor="end"><tspan x="0" y="0">María Sánchez Domínguez</tspan></text>
+  </g>
+</svg>

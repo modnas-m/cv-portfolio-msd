@@ -2,6 +2,8 @@
 import { usePortfolio } from '../stores/portfolio.js'
 import PixelCoffee from '../components/PixelCoffee.vue'
 const p = usePortfolio()
+// files in public/ are served from the site's base path
+const pdf = p.site.portfolioPdf ? import.meta.env.BASE_URL + p.site.portfolioPdf : null
 </script>
 
 <template>
@@ -12,6 +14,7 @@ const p = usePortfolio()
       <li><a :href="`mailto:${p.site.email}`">{{ p.site.email }}</a></li>
       <li v-if="p.site.linkedin"><a :href="p.site.linkedin" target="_blank" rel="noopener">LinkedIn</a></li>
       <li v-if="p.site.github"><a :href="p.site.github" target="_blank" rel="noopener">GitHub</a></li>
+      <li v-if="pdf"><a :href="pdf" target="_blank" rel="noopener">Portfolio (PDF)</a></li>
     </ul>
   </main>
 </template>
